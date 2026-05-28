@@ -6,27 +6,27 @@
    1. デザイン変数 (Design Tokens)
    -------------------------------------------------------------------------- */
 :root {
-    /* カラーパレット (ダーク & ネオンパープル) */
-    --color-bg: #09080d;             /* サイト全体の背景（極暗紫色） */
-    --color-surface: #12101a;        /* コンポーネントの表面色 */
-    --color-surface-hover: #1b1827;  /* ホバー時の表面色 */
-    --color-accent: #9146ff;         /* メインアクセント (Twitchパープル) */
-    --color-accent-glow: rgba(145, 70, 255, 0.35); /* アクセント光彩用 */
-    --color-accent-light: #b88eff;   /* 明るいパープル */
+    /* カラーパレット (青系パステルカラー＆ライトテーマ) */
+    --color-bg: #f2f7fc;             /* サイト全体の背景（極めて淡いパステルブルー） */
+    --color-surface: #ffffff;        /* コンポーネントの表面色（ピュアホワイト） */
+    --color-surface-hover: #eef5fc;  /* ホバー時の表面色（淡いパステルブルー） */
+    --color-accent: #3a8cdb;         /* メインアクセント (爽やかなパステルブルー) */
+    --color-accent-glow: rgba(58, 140, 219, 0.15); /* アクセント光彩用 */
+    --color-accent-light: #7cb8f7;   /* 明るいパステルブルー */
     
-    /* ユーモラスでポップなネオンイエロー (ストッキング風ゴールド) */
-    --color-yellow: #ffd54f;
-    --color-yellow-glow: rgba(255, 213, 79, 0.35);
+    /* ユーモラスでポップな差し色 (明るいパステルイエロー) */
+    --color-yellow: #fbc02d;
+    --color-yellow-glow: rgba(251, 192, 45, 0.25);
     
-    /* テキストカラー */
-    --color-text-primary: #f5f5f7;   /* 主本文 */
-    --color-text-secondary: #a3a1b8; /* 副本文・ラベル */
-    --color-text-muted: #625f7a;     /* 非アクティブ・補足 */
+    /* テキストカラー (暗いスレートグレーで高い可読性) */
+    --color-text-primary: #2c3e50;   /* 主本文 */
+    --color-text-secondary: #5a738e; /* 副本文・ラベル */
+    --color-text-muted: #8fa0b5;     /* 非アクティブ・補足 */
 
-    /* グラスモルフィズム（ガラス風エフェクト） */
-    --glass-bg: rgba(18, 16, 26, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.05);
-    --glass-blur: blur(12px);
+    /* グラスモルフィズム（ライトなガラス風エフェクト） */
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(58, 140, 219, 0.12);
+    --glass-blur: blur(8px);
 
     /* 角丸・間隔・フォント */
     --radius-sm: 8px;
@@ -67,7 +67,7 @@ body {
     background: var(--color-bg);
 }
 ::-webkit-scrollbar-thumb {
-    background: #252233;
+    background: #d0e1f5;
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -93,9 +93,9 @@ body {
 }
 
 .badge {
-    background: rgba(145, 70, 255, 0.15);
-    color: var(--color-accent-light);
-    border: 1px solid rgba(145, 70, 255, 0.3);
+    background: rgba(58, 140, 219, 0.08);
+    color: var(--color-accent);
+    border: 1px solid rgba(58, 140, 219, 0.22);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -110,7 +110,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 24px 5%;
-    background: rgba(9, 8, 13, 0.8);
+    background: rgba(242, 247, 252, 0.85);
     backdrop-filter: var(--glass-blur);
     border-bottom: 1px solid var(--glass-border);
     position: sticky;
@@ -274,18 +274,19 @@ body {
 .form-control {
     width: 100%;
     padding: 14px 16px 14px 48px;
-    background: rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(58, 140, 219, 0.15);
     border-radius: var(--radius-sm);
     color: var(--color-text-primary);
     font-size: 0.95rem;
     outline: none;
     transition: var(--transition-normal);
+    box-shadow: 0 2px 6px rgba(58, 140, 219, 0.04);
 }
 .form-control:focus {
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(145, 70, 255, 0.2), inset 0 2px 4px rgba(0,0,0,0.3);
-    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0 3px rgba(58, 140, 219, 0.15), 0 2px 8px rgba(58, 140, 219, 0.08);
+    background: #ffffff;
 }
 .form-control:focus ~ .search-icon {
     color: var(--color-accent-light);
@@ -308,10 +309,10 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.8);
     padding: 6px 12px;
     border-radius: var(--radius-sm);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(58, 140, 219, 0.12);
 }
 
 .logic-label {
@@ -322,7 +323,7 @@ body {
 
 .logic-switch {
     display: flex;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(58, 140, 219, 0.08);
     border-radius: 6px;
     overflow: hidden;
     padding: 2px;
@@ -336,7 +337,7 @@ body {
     padding: 6px 14px;
     font-size: 0.85rem;
     font-weight: 700;
-    color: var(--color-text-muted);
+    color: var(--color-text-secondary);
     cursor: pointer;
     border-radius: 4px;
     transition: var(--transition-fast);
@@ -391,7 +392,7 @@ body {
 .select-control {
     padding: 10px 16px;
     border-radius: var(--radius-sm);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23a3a1b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%235a738e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 12px center;
     background-size: 16px;
@@ -438,13 +439,13 @@ body {
     background: var(--color-surface);
     border-radius: var(--radius-md);
     overflow: hidden;
-    border: 1px solid var(--glass-border);
+    border: 1px solid rgba(58, 140, 219, 0.08);
     transition: var(--transition-normal);
     cursor: pointer;
     display: flex;
     flex-direction: column;
     position: relative;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(58, 140, 219, 0.05);
 }
 
 /* サムネイル部分 */
@@ -473,8 +474,8 @@ body {
 
 .clip-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(145, 70, 255, 0.3);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 0 15px rgba(145, 70, 255, 0.15);
+    border-color: rgba(58, 140, 219, 0.25);
+    box-shadow: 0 12px 28px rgba(58, 140, 219, 0.12), 0 0 15px rgba(58, 140, 219, 0.05);
 }
 
 /* サムネイル上のオーバーレイ情報 */
@@ -516,7 +517,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(14, 10, 24, 0.4);
+    background: rgba(58, 140, 219, 0.18);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -647,8 +648,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(7, 5, 10, 0.85);
-    backdrop-filter: blur(8px);
+    background: rgba(44, 62, 80, 0.65);
+    backdrop-filter: blur(6px);
 }
 
 .modal-content {
@@ -657,12 +658,12 @@ body {
     max-width: 800px;
     background: var(--color-surface);
     border-radius: var(--radius-md);
-    border: 1px solid rgba(145, 70, 255, 0.2);
+    border: 1px solid rgba(58, 140, 219, 0.15);
     overflow: hidden;
     transform: scale(0.9);
     transition: transform var(--transition-normal);
     z-index: 1001;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(145, 70, 255, 0.2);
+    box-shadow: 0 20px 50px rgba(44, 62, 80, 0.25), 0 0 30px rgba(58, 140, 219, 0.08);
 }
 
 .modal.active .modal-content {
@@ -711,7 +712,7 @@ body {
 
 .modal-info {
     padding: 24px;
-    background: linear-gradient(to bottom, var(--color-surface) 0%, #0d0c14 100%);
+    background: linear-gradient(to bottom, var(--color-surface) 0%, #f4f8fc 100%);
 }
 
 .modal-title {
@@ -748,9 +749,9 @@ body {
     text-align: center;
     padding: 40px 20px;
     border-top: 1px solid var(--glass-border);
-    background: #06050a;
+    background: #eef4fa;
     font-size: 0.85rem;
-    color: var(--color-text-muted);
+    color: var(--color-text-secondary);
     display: flex;
     flex-direction: column;
     gap: 8px;
