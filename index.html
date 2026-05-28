@@ -56,6 +56,15 @@
                 </div>
 
                 <div class="filter-group-sub">
+                    <!-- ゲームカテゴリフィルター (単一選択) -->
+                    <div class="filter-item game-filter">
+                        <label class="filter-label" for="game-select"><i data-lucide="gamepad-2"></i> ゲームカテゴリ</label>
+                        <select id="game-select" class="form-control select-control">
+                            <option value="all">すべてのゲーム (デフォルト)</option>
+                            <!-- JavaScriptによってユニークなゲーム名が動的に追加されます -->
+                        </select>
+                    </div>
+
                     <!-- 日付検索フィルター -->
                     <div class="filter-item date-filter">
                         <label class="filter-label"><i data-lucide="calendar"></i> 期間指定</label>
@@ -77,7 +86,7 @@
                         </select>
                     </div>
 
-                    <!-- リセットボタン -->
+                    <!-- フィルター解除ボタン -->
                     <button id="reset-filters-btn" class="btn btn-secondary">
                         <i data-lucide="rotate-ccw"></i>
                         <span>フィルター解除</span>
@@ -88,16 +97,40 @@
             <!-- クリップ一覧エリア -->
             <section class="clips-section">
                 <div class="clips-header">
-                    <h2 class="section-title">アーカイブ クリップ</h2>
-                    <span id="results-count" class="badge">0 件のクリップ</span>
+                    <div class="clips-header-title">
+                        <h2 class="section-title">アーカイブ クリップ</h2>
+                        <!-- JSONの更新日付を表示するテキスト -->
+                        <p id="data-updated-at" class="updated-at-text">データ更新日時: 読み込み中...</p>
+                    </div>
+                    <div class="clips-header-meta">
+                        <!-- 総クリップ数と検索ヒット件数のバッジ -->
+                        <span id="total-count-badge" class="badge badge-secondary">総数: -- 件</span>
+                        <span id="results-count" class="badge">0 件のクリップ</span>
+                    </div>
                 </div>
-                <!-- クリップグリッド (JSで動的生成) -->
+
+                <!-- クリップグリッド -->
                 <div id="clips-grid" class="clips-grid">
-                    <!-- ローディングプレースホルダー（後ほどJSで削除・置換されます） -->
+                    <!-- ローディング状態 -->
                     <div class="loading-state">
                         <div class="spinner"></div>
-                        <p>クリップをロードしています...</p>
+                        <p>Twitchクリップデータを取得しています...</p>
                     </div>
+                </div>
+
+                <!-- ページネーションコントロール (1ページ100件単位) -->
+                <div class="pagination-container" style="display: none;">
+                    <button id="prev-page-btn" class="btn btn-secondary btn-pagination" disabled>
+                        <i data-lucide="chevron-left"></i>
+                        <span>前へ</span>
+                    </button>
+                    <div id="page-numbers" class="page-numbers">
+                        <!-- JavaScriptによってページ番号ボタンが動的に挿入されます -->
+                    </div>
+                    <button id="next-page-btn" class="btn btn-secondary btn-pagination" disabled>
+                        <span>次へ</span>
+                        <i data-lucide="chevron-right"></i>
+                    </button>
                 </div>
             </section>
         </main>
