@@ -199,7 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // ページ番号ボタンリストの動的生成 (現在ページの前後1ページと、最初/最後を表示し、間を "..." で省略)
         pageNumbersContainer.innerHTML = '';
         
-        const range = 1; // 現在ページの左右に表示する個数
+        // ページネーションの表示範囲 (range) を画面幅に応じて動的に切り替え (スマホは極力スッキリさせる)
+        const isMobile = window.innerWidth <= 480;
+        const range = isMobile ? 0 : 1; // スマホ表示時は現在ページの左右表示を0個にして、ボタンのあふれを防ぐ
         let pagesToShow = [];
         
         // 常に最初のページは表示
