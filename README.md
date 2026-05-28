@@ -1,5 +1,8 @@
 # newsaan-clipsite 🎬
 
+## 🌐 公開デモサイトURL
+👉 **[https://hamburgIzumi.github.io/newsaan-clipsite/](https://hamburgIzumi.github.io/newsaan-clipsite/)**
+
 Twitch配信者 **[newsaan](https://www.twitch.tv/newsaan)** の配信クリップを、外部サイトに遷移することなく、当サイト内で快適に検索・閲覧・再生できる非公式ファンサイト（ギャラリー）です。
 
 ---
