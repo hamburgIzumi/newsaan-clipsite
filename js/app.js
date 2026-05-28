@@ -36,11 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCloseBtn = document.querySelector('.modal-close-btn');
     const modalOverlay = document.querySelector('.modal-overlay');
     
-    // テーマ切り替え・表示形式切り替え用DOM要素
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const moonIcon = themeToggleBtn.querySelector('.theme-icon-dark');
-    const sunIcon = themeToggleBtn.querySelector('.theme-icon-light');
-    
     const viewGridBtn = document.getElementById('view-grid-btn');
     const viewListBtn = document.getElementById('view-list-btn');
 
@@ -551,35 +546,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- 13. テーマ切り替え機能 (ダーク/ライト) の実装 ---
-    function initTheme() {
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            moonIcon.style.display = 'none';
-            sunIcon.style.display = 'block';
-        } else {
-            document.body.classList.remove('dark-mode');
-            moonIcon.style.display = 'block';
-            sunIcon.style.display = 'none';
-        }
-    }
 
-    themeToggleBtn.addEventListener('click', () => {
-        const isDark = document.body.classList.toggle('dark-mode');
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        
-        if (isDark) {
-            moonIcon.style.display = 'none';
-            sunIcon.style.display = 'block';
-        } else {
-            moonIcon.style.display = 'block';
-            sunIcon.style.display = 'none';
-        }
-        
-        // Lucideアイコンの再読み込み
-        lucide.createIcons({ node: themeToggleBtn });
-    });
 
     // --- 14. 表示形式切り替え機能 (グリッド/リスト) の実装 ---
     function setViewMode(mode) {
@@ -602,8 +569,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- アプリケーションの初期起動処理 ---
     
-    // テーマと表示形式の初期読み込み
-    initTheme();
     const savedView = localStorage.getItem('viewMode') || 'grid';
     setViewMode(savedView);
 
