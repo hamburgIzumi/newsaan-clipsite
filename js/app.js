@@ -120,6 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="clip-info">
                 <h3 class="clip-title" title="${clip.title}">${clip.title}</h3>
+                <div class="clip-creator-info" title="クリップ作成者">
+                    <i data-lucide="user"></i>
+                    <span class="clip-creator">${clip.creator_name || "Unknown"}</span>
+                </div>
                 <div class="clip-sub-info">
                     <span class="clip-game">${clip.game_name}</span>
                     <span class="clip-date">${formatDate(clip.created_at)}</span>
@@ -401,6 +405,11 @@ document.addEventListener('DOMContentLoaded', () => {
         modalGame.innerHTML = `<i data-lucide="gamepad-2"></i> <span>${clip.game_name}</span>`;
         modalViews.innerHTML = `<i data-lucide="eye"></i> <span>${formatViews(clip.view_count)} views</span>`;
         modalDate.innerHTML = `<i data-lucide="calendar"></i> <span>${formatDate(clip.created_at)}</span>`;
+        
+        const modalCreator = document.getElementById('modal-creator');
+        if (modalCreator) {
+            modalCreator.innerHTML = `<i data-lucide="user"></i> <span>作成者: ${clip.creator_name || "Unknown"}</span>`;
+        }
 
         // 現在実行中のホストドメインを取得
         const currentHost = window.location.hostname || 'localhost';
