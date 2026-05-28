@@ -1,5 +1,5 @@
 /**
- * newsaan-clipsite: メインJavaScriptロジック
+ * newsaan-clipsite: メインJavaScriptロジック (Twitch API 直接連携版)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCloseBtn = document.querySelector('.modal-close-btn');
     const modalOverlay = document.querySelector('.modal-overlay');
 
-    // --- 検索・フィルター状態管理 (State) ---
+    // --- アプリケーションの状態管理 (State) ---
+    let allClips = []; // Twitchからフェッチしたすべてのクリップデータを格納する配列
+    
     const filterState = {
         searchQuery: '',
         logic: 'AND',     // 'AND' または 'OR' (複数キーワード検索時の挙動)
@@ -137,9 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
      * 5. 検索・フィルター・ソートロジックの適用 (Core Engine)
      */
     function applyFiltersAndSort() {
-        if (!window.CLIPS_DATA) return;
-
-        let filteredClips = [...window.CLIPS_DATA];
+        let filteredClips = [...allClips];
 
         // --- A. キーワード検索 (AND / OR 対応) ---
         if (filterState.searchQuery.trim() !== '') {
@@ -166,7 +166,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // --- B. 日付指定フィルター (期間検索) ---
-        // クリップの created_at をローカル日付基準 (YYYY-MM-DD) に整形して比較
         if (filterState.dateStart !== '') {
             const startDate = new Date(filterState.dateStart + 'T00:00:00');
             filteredClips = filteredClips.filter(clip => {
@@ -203,7 +202,97 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * 6. 動画埋め込みモーダルプレイヤーを開く処理
+     * 6. Twitch GraphQL APIから最新のクリップを動的フェッチする処理
+     */
+    async function fetchTwitchClips() {
+        const gqlUrl = 'https://gql.twitch.tv/gql';
+        const clientId = 'kimne78kx3ncx6brgo4mv6wki5h1ko'; // TwitchパブリッククライアントID
+        
+        // 配信者 'newsaan' のクリップを取得するGraphQLクエリ
+        const queryPayload = {
+            query: `query {
+                user(login: "newsaan") {
+                    clips(first: 30) {
+                        edges {
+                            node {
+                                id
+                                slug
+                                title
+                                viewCount
+                                createdAt
+                                durationSeconds
+                                game {
+                                    name
+                                }
+                                thumbnailURL
+                            }
+                        }
+                    }
+                }
+            }`
+        };
+
+        try {
+            const response = await fetch(gqlUrl, {
+                method: 'POST',
+                headers: {
+                    'Client-ID': clientId,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(queryPayload)
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const resData = await response.json();
+            
+            if (!resData.data || !resData.data.user || !resData.data.user.clips) {
+                throw new Error('Twitchのユーザーデータまたはクリップが取得できませんでした。');
+            }
+
+            // 取得した生の配列を内部データ型にマッピング
+            const edges = resData.data.user.clips.edges;
+            allClips = edges.map(edge => {
+                const n = edge.node;
+                const min = Math.floor(n.durationSeconds / 60);
+                const sec = String(n.durationSeconds % 60).padStart(2, '0');
+                
+                return {
+                    id: n.id,
+                    title: n.title,
+                    game_name: n.game ? n.game.name : 'Unknown',
+                    view_count: n.viewCount,
+                    created_at: n.createdAt,
+                    duration: `${min}:${sec}`,
+                    thumbnail_url: n.thumbnailURL,
+                    clip_slug: n.slug
+                };
+            });
+
+            console.log(`newsaan-clipsite: ${allClips.length} 件の本物のクリップをフェッチしました。`);
+            
+            // 初回表示を実行
+            applyFiltersAndSort();
+
+        } catch (error) {
+            console.error('newsaan-clipsite: APIフェッチ中にエラーが発生しました:', error);
+            
+            // 画面にエラーパネルを表示
+            clipsGrid.innerHTML = `
+                <div class="error-state">
+                    <i data-lucide="x-circle" style="width: 48px; height: 48px; color: #ff4a4a; margin-bottom: 12px;"></i>
+                    <p>Twitchからのリアルタイムデータ取得に失敗しました。<br>時間をおいてブラウザを再読み込み（リフレッシュ）してください。</p>
+                </div>
+            `;
+            resultsCount.textContent = 'エラー';
+            lucide.createIcons({ node: clipsGrid });
+        }
+    }
+
+    /**
+     * 7. 動画埋め込みモーダルプレイヤーを開く処理
      */
     function openVideoModal(clip) {
         modalTitle.textContent = clip.title;
@@ -235,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * 7. 動画埋め込みモーダルプレイヤーを閉じる処理
+     * 8. 動画埋め込みモーダルプレイヤーを閉じる処理
      */
     function closeVideoModal() {
         videoModal.classList.remove('active');
@@ -246,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalVideoWrapper.innerHTML = '';
     }
 
-    // --- 8. イベントリスナーの登録 (Interaction) ---
+    // --- 9. イベントリスナーの登録 (Interaction) ---
 
     // 検索入力時のリアルタイムフィルタリング
     searchInput.addEventListener('input', (e) => {
@@ -334,17 +423,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // 最初のLucideアイコンの全体読み込み
     lucide.createIcons();
 
-    // グローバルに定義されたモックデータを読み込んで最初の描画を実行
-    if (window.CLIPS_DATA) {
-        applyFiltersAndSort();
-    } else {
-        console.error("newsaan-clipsite: モックデータ(CLIPS_DATA)が見つかりません。");
-        clipsGrid.innerHTML = `
-            <div class="error-state">
-                <i data-lucide="x-circle" style="width: 48px; height: 48px; color: #ff4a4a; margin-bottom: 12px;"></i>
-                <p>データの読み込みに失敗しました。</p>
-            </div>
-        `;
-        lucide.createIcons({ node: clipsGrid });
-    }
+    // TwitchのAPIからリアルタイムにデータを動的取得して起動
+    fetchTwitchClips();
 });
