@@ -185,8 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- ページネーションコントロールのUI更新 ---
         
-        // ページ件数情報バッジを更新 ("nn本のクリップ" 表記)
-        resultsCount.textContent = `${totalItems}本のクリップ (ページ ${currentPage}/${totalPages})`;
+        // ページ件数情報バッジを更新 (シンプルにページ表示のみに変更)
+        resultsCount.textContent = `ページ ${currentPage}/${totalPages}`;
 
         // 前へ / 次へ ボタンの無効化・有効化制御
         prevPageBtn.disabled = (currentPage === 1);
