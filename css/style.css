@@ -985,17 +985,80 @@ body {
     
     .clips-header-meta {
         width: 100%;
-        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap; /* スマホ画面でバッジが重ならないように折り返しを許可 */
+        align-items: center;
+        gap: 8px;
     }
     
     .pagination-container {
         padding: 12px;
         gap: 8px;
         border-radius: var(--radius-sm);
+        max-width: 100%;
+    }
+    
+    .btn-page-number {
+        width: 34px; /* ボタンサイズを少し小さくしてスマホに収まりやすくする */
+        height: 34px;
+        font-size: 0.85rem;
+    }
+    
+    .pagination-ellipsis {
+        width: 24px;
+        height: 34px;
+        font-size: 0.9rem;
     }
     
     .btn-pagination span {
-        display: inline; /* ページネーションの前へ・次へボタンはスマホでも文字表示 */
+        display: inline; /* 768px以下では前へ・次への文字を表示 */
+    }
+}
+
+/* 480px以下のスマートフォン極小画面向け最適化 (PCWeb表示への影響は一切なし) */
+@media (max-width: 480px) {
+    .clips-header-meta {
+        justify-content: flex-start; /* 左寄せにしてきれいに整列 */
+        gap: 6px;
+    }
+    
+    .clips-header-meta .badge {
+        font-size: 0.75rem; /* バッジフォントサイズを縮小 */
+        padding: 3px 8px;
+    }
+    
+    .view-toggle-group {
+        margin-left: 0;
+    }
+    
+    .pagination-container {
+        padding: 8px 6px;
+        gap: 4px;
+    }
+    
+    .page-numbers {
+        gap: 4px; /* ボタン同士の間隔をさらに狭める */
+    }
+    
+    .btn-pagination {
+        padding: 8px 10px; /* 前へ・次へボタンのパディングを狭く */
+    }
+    
+    .btn-pagination span {
+        display: none !important; /* スマホの極小画面では「前へ」「次へ」のテキストを非表示にし、アイコンのみで表示崩れを完全に防ぐ */
+    }
+    
+    .btn-page-number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+        border-radius: 6px;
+    }
+    
+    .pagination-ellipsis {
+        width: 16px;
+        height: 32px;
+        font-size: 0.8rem;
     }
 }
 
