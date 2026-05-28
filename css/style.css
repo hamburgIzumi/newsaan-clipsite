@@ -493,23 +493,27 @@ body {
 }
 
 .clip-views {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(44, 62, 80, 0.82); /* 半透明のスレートグレーで背景を引き締める */
     backdrop-filter: blur(4px);
+    color: #ffffff;                    /* 完全に白にしてパステルテーマ下での視認性を確保 */
     padding: 3px 8px;
     border-radius: 4px;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     align-items: center;
     gap: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .clip-duration {
-    background: rgba(145, 70, 255, 0.85);
+    background: var(--color-accent);    /* 青系パステルカラーのメインアクセントに統合 */
+    color: #ffffff;                    /* 完全に白 */
     padding: 3px 6px;
     border-radius: 4px;
     font-size: 0.75rem;
     font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* 再生開始アイコン（ホバーでフェードイン） */
