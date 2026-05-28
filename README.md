@@ -1,2 +1,2 @@
-# newsaan-clipsite-
+# newsaan-clipsite
 Newsaan clipViewer
