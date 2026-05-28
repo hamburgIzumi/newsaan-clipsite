@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newsaan clipsite - Twitch Clips Gallery</title>
+    <!-- Google Fonts: Outfit と Inter をインポートして洗練されたタイポグラフィを実現 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons: モダンで軽量なアイコンライブラリ -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- カスタムスタイルシートの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- ヘッダーセクション -->
+        <header class="main-header">
+            <div class="header-logo">
+                <div class="logo-icon"></div>
+                <h1>newsaan <span class="accent-text">Clips</span></h1>
+            </div>
+            <div class="header-actions">
+                <a href="https://www.twitch.tv/newsaan" target="_blank" rel="noopener noreferrer" class="btn btn-twitch">
+                    <i data-lucide="twitch"></i>
+                    <span>Twitchで視聴する</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- メインコンテンツエリア -->
+        <main class="main-content">
+            <!-- 検索 & フィルターパネル -->
+            <section class="filter-panel" aria-label="検索とフィルター">
+                <div class="filter-group-main">
+                    <!-- 検索バー -->
+                    <div class="search-bar-container">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" id="search-input" placeholder="タイトル、ゲーム名で検索..." class="form-control">
+                        <button id="clear-search-btn" class="clear-btn" style="display: none;">
+                            <i data-lucide="x"></i>
+                        </button>
+                    </div>
+                    <!-- AND / OR 切替トグル -->
+                    <div class="search-logic-container">
+                        <span class="logic-label">検索条件:</span>
+                        <div class="logic-switch">
+                            <input type="radio" id="logic-and" name="search-logic" value="AND" checked>
+                            <label for="logic-and">AND</label>
+                            
+                            <input type="radio" id="logic-or" name="search-logic" value="OR">
+                            <label for="logic-or">OR</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group-sub">
+                    <!-- 日付検索フィルター -->
+                    <div class="filter-item date-filter">
+                        <label class="filter-label"><i data-lucide="calendar"></i> 期間指定</label>
+                        <div class="date-inputs">
+                            <input type="date" id="date-start" class="form-control date-control" placeholder="開始日">
+                            <span class="date-separator">〜</span>
+                            <input type="date" id="date-end" class="form-control date-control" placeholder="終了日">
+                        </div>
+                    </div>
+
+                    <!-- ソートフィルター -->
+                    <div class="filter-item sort-filter">
+                        <label class="filter-label" for="sort-select"><i data-lucide="sliders-horizontal"></i> 並び替え</label>
+                        <select id="sort-select" class="form-control select-control">
+                            <option value="views-desc">閲覧数: 多い順 (デフォルト)</option>
+                            <option value="views-asc">閲覧数: 少ない順</option>
+                            <option value="date-desc">作成日: 新しい順</option>
+                            <option value="date-asc">作成日: 古い順</option>
+                        </select>
+                    </div>
+
+                    <!-- リセットボタン -->
+                    <button id="reset-filters-btn" class="btn btn-secondary">
+                        <i data-lucide="rotate-ccw"></i>
+                        <span>フィルター解除</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- クリップ一覧エリア -->
+            <section class="clips-section">
+                <div class="clips-header">
+                    <h2 class="section-title">アーカイブ クリップ</h2>
+                    <span id="results-count" class="badge">0 件のクリップ</span>
+                </div>
+                <!-- クリップグリッド (JSで動的生成) -->
+                <div id="clips-grid" class="clips-grid">
+                    <!-- ローディングプレースホルダー（後ほどJSで削除・置換されます） -->
+                    <div class="loading-state">
+                        <div class="spinner"></div>
+                        <p>クリップをロードしています...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- フッターセクション -->
+        <footer class="main-footer">
+            <p>&copy; 2026 newsaan Clipsite. Created for Twitch Streamer <a href="https://www.twitch.tv/newsaan" target="_blank" rel="noopener noreferrer">newsaan</a>.</p>
+            <p class="footer-disclaimer">このサイトは非公式ファンサイトです。掲載されているクリップや画像の著作権は配信者およびTwitchに帰属します。</p>
+        </footer>
+
+        <!-- 動画再生モーダルプレイヤー (サイト内完結用) -->
+        <div id="video-modal" class="modal" aria-hidden="true">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close-btn" aria-label="モーダルを閉じる">
+                    <i data-lucide="x"></i>
+                </button>
+                <div class="modal-video-wrapper">
+                    <!-- TwitchクリップのiframeプレイヤーがJSでここに挿入されます -->
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title" class="modal-title">クリップのタイトル</h3>
+                    <div class="modal-meta">
+                        <span id="modal-game" class="modal-game"><i data-lucide="gamepad-2"></i> ゲーム名</span>
+                        <span id="modal-views" class="modal-views"><i data-lucide="eye"></i> 0 views</span>
+                        <span id="modal-date" class="modal-date"><i data-lucide="calendar"></i> 2026/05/28</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- メインロジックJavaScriptの読み込み -->
+    <script src="js/app.js"></script>
+</body>
+</html>
