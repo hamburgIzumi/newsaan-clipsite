@@ -153,7 +153,8 @@ def main():
             "created_at": clip.get("created_at"),
             "duration": duration_str,
             "thumbnail_url": clip.get("thumbnail_url"),
-            "clip_slug": clip_slug
+            "clip_slug": clip_slug,
+            "creator_name": clip.get("creator_name", "Unknown")
         })
 
     # 日本時間 (JST) の現在日時メタデータを生成 (UTC+9)
