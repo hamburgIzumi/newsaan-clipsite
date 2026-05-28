@@ -3,11 +3,21 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // DOM要素の取得
+    // --- DOM要素の取得 ---
     const clipsGrid = document.getElementById('clips-grid');
     const resultsCount = document.getElementById('results-count');
     
-    // モーダル要素の取得
+    // フィルター系DOM要素
+    const searchInput = document.getElementById('search-input');
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+    const logicAndInput = document.getElementById('logic-and');
+    const logicOrInput = document.getElementById('logic-or');
+    const dateStartInput = document.getElementById('date-start');
+    const dateEndInput = document.getElementById('date-end');
+    const sortSelect = document.getElementById('sort-select');
+    const resetFiltersBtn = document.getElementById('reset-filters-btn');
+    
+    // モーダル系DOM要素
     const videoModal = document.getElementById('video-modal');
     const modalTitle = document.getElementById('modal-title');
     const modalGame = document.getElementById('modal-game');
@@ -16,6 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalVideoWrapper = document.querySelector('.modal-video-wrapper');
     const modalCloseBtn = document.querySelector('.modal-close-btn');
     const modalOverlay = document.querySelector('.modal-overlay');
+
+    // --- 検索・フィルター状態管理 (State) ---
+    const filterState = {
+        searchQuery: '',
+        logic: 'AND',     // 'AND' または 'OR' (複数キーワード検索時の挙動)
+        dateStart: '',    // YYYY-MM-DD
+        dateEnd: '',      // YYYY-MM-DD
+        sortBy: 'views-desc' // デフォルトは閲覧数の多い順
+    };
 
     /**
      * 1. 閲覧数の表示用フォーマット変換関数
@@ -115,7 +134,76 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * 5. 動画埋め込みモーダルプレイヤーを開く処理
+     * 5. 検索・フィルター・ソートロジックの適用 (Core Engine)
+     */
+    function applyFiltersAndSort() {
+        if (!window.CLIPS_DATA) return;
+
+        let filteredClips = [...window.CLIPS_DATA];
+
+        // --- A. キーワード検索 (AND / OR 対応) ---
+        if (filterState.searchQuery.trim() !== '') {
+            // 全角・半角スペースでクエリを分割し、小文字化してキーワード配列を作成
+            const keywords = filterState.searchQuery
+                .toLowerCase()
+                .split(/[\s　]+/)
+                .filter(k => k !== '');
+
+            if (keywords.length > 0) {
+                filteredClips = filteredClips.filter(clip => {
+                    const title = clip.title.toLowerCase();
+                    const game = clip.game_name.toLowerCase();
+
+                    if (filterState.logic === 'AND') {
+                        // AND検索: すべてのキーワードがタイトルまたはゲーム名に含まれる
+                        return keywords.every(kw => title.includes(kw) || game.includes(kw));
+                    } else {
+                        // OR検索: いずれかのキーワードがタイトルまたはゲーム名に含まれる
+                        return keywords.some(kw => title.includes(kw) || game.includes(kw));
+                    }
+                });
+            }
+        }
+
+        // --- B. 日付指定フィルター (期間検索) ---
+        // クリップの created_at をローカル日付基準 (YYYY-MM-DD) に整形して比較
+        if (filterState.dateStart !== '') {
+            const startDate = new Date(filterState.dateStart + 'T00:00:00');
+            filteredClips = filteredClips.filter(clip => {
+                const clipDate = new Date(clip.created_at);
+                return clipDate >= startDate;
+            });
+        }
+        if (filterState.dateEnd !== '') {
+            const endDate = new Date(filterState.dateEnd + 'T23:59:59');
+            filteredClips = filteredClips.filter(clip => {
+                const clipDate = new Date(clip.created_at);
+                return clipDate <= endDate;
+            });
+        }
+
+        // --- C. ソート処理 ---
+        filteredClips.sort((a, b) => {
+            switch (filterState.sortBy) {
+                case 'views-desc': // 閲覧数の多い順 (デフォルト)
+                    return b.view_count - a.view_count;
+                case 'views-asc':  // 閲覧数の少ない順
+                    return a.view_count - b.view_count;
+                case 'date-desc':  // 作成日の新しい順
+                    return new Date(b.created_at) - new Date(a.created_at);
+                case 'date-asc':   // 作成日の古い順
+                    return new Date(a.created_at) - new Date(b.created_at);
+                default:
+                    return 0;
+            }
+        });
+
+        // 絞り込みとソートが終わった配列を画面に再描画
+        renderClips(filteredClips);
+    }
+
+    /**
+     * 6. 動画埋め込みモーダルプレイヤーを開く処理
      */
     function openVideoModal(clip) {
         modalTitle.textContent = clip.title;
@@ -123,8 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalViews.innerHTML = `<i data-lucide="eye"></i> <span>${formatViews(clip.view_count)} views</span>`;
         modalDate.innerHTML = `<i data-lucide="calendar"></i> <span>${formatDate(clip.created_at)}</span>`;
 
-        // 現在実行中のホストドメインを取得 (localhost または GitHub Pages のドメイン)
-        // Twitch埋め込みAPIのセキュリティ要件（parentパラメータ）を自動で満たすため
+        // 現在実行中のホストドメインを取得
         const currentHost = window.location.hostname || 'localhost';
 
         // Twitch クリップ埋め込み iframe の生成 (自動再生有効化)
@@ -148,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * 6. 動画埋め込みモーダルプレイヤーを閉じる処理
+     * 7. 動画埋め込みモーダルプレイヤーを閉じる処理
      */
     function closeVideoModal() {
         videoModal.classList.remove('active');
@@ -158,6 +245,78 @@ document.addEventListener('DOMContentLoaded', () => {
         // iframeをクリアして動画の音声再生を完全に停止させる
         modalVideoWrapper.innerHTML = '';
     }
+
+    // --- 8. イベントリスナーの登録 (Interaction) ---
+
+    // 検索入力時のリアルタイムフィルタリング
+    searchInput.addEventListener('input', (e) => {
+        filterState.searchQuery = e.target.value;
+        
+        // 文字列が入っている場合のみクリアボタンを表示
+        if (filterState.searchQuery.length > 0) {
+            clearSearchBtn.style.display = 'block';
+        } else {
+            clearSearchBtn.style.display = 'none';
+        }
+        
+        applyFiltersAndSort();
+    });
+
+    // 検索窓クリアボタンクリック時
+    clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        filterState.searchQuery = '';
+        clearSearchBtn.style.display = 'none';
+        applyFiltersAndSort();
+        searchInput.focus();
+    });
+
+    // 検索論理(AND/OR)切り替えラジオボタン
+    const handleLogicChange = (e) => {
+        if (e.target.checked) {
+            filterState.logic = e.target.value;
+            applyFiltersAndSort();
+        }
+    };
+    logicAndInput.addEventListener('change', handleLogicChange);
+    logicOrInput.addEventListener('change', handleLogicChange);
+
+    // 日付指定（開始日・終了日）の変更時
+    dateStartInput.addEventListener('change', (e) => {
+        filterState.dateStart = e.target.value;
+        applyFiltersAndSort();
+    });
+    dateEndInput.addEventListener('change', (e) => {
+        filterState.dateEnd = e.target.value;
+        applyFiltersAndSort();
+    });
+
+    // ソート順の変更時
+    sortSelect.addEventListener('change', (e) => {
+        filterState.sortBy = e.target.value;
+        applyFiltersAndSort();
+    });
+
+    // フィルター条件のリセットボタンクリック時
+    resetFiltersBtn.addEventListener('click', () => {
+        // UIコントロールの値を初期化
+        searchInput.value = '';
+        clearSearchBtn.style.display = 'none';
+        logicAndInput.checked = true; // ANDデフォルト
+        dateStartInput.value = '';
+        dateEndInput.value = '';
+        sortSelect.value = 'views-desc'; // 閲覧数の多い順デフォルト
+        
+        // 内部状態(State)のリセット
+        filterState.searchQuery = '';
+        filterState.logic = 'AND';
+        filterState.dateStart = '';
+        filterState.dateEnd = '';
+        filterState.sortBy = 'views-desc';
+
+        // フィルタリングの再適用
+        applyFiltersAndSort();
+    });
 
     // モーダルのイベントリスナーの登録
     modalCloseBtn.addEventListener('click', closeVideoModal);
@@ -175,10 +334,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 最初のLucideアイコンの全体読み込み
     lucide.createIcons();
 
-    // グローバルに定義されたモックデータを読み込んで画面に表示
+    // グローバルに定義されたモックデータを読み込んで最初の描画を実行
     if (window.CLIPS_DATA) {
-        // ロード画面を非表示にして描画
-        renderClips(window.CLIPS_DATA);
+        applyFiltersAndSort();
     } else {
         console.error("newsaan-clipsite: モックデータ(CLIPS_DATA)が見つかりません。");
         clipsGrid.innerHTML = `
