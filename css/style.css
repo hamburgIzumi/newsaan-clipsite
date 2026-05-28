@@ -41,25 +41,6 @@
     --transition-normal: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* ダークモード用カラー定義 (body.dark-mode が有効な場合) */
-body.dark-mode {
-    --color-bg: #090c13;             /* ダークな青黒い背景 */
-    --color-surface: #121722;        /* ダークサーフェス */
-    --color-surface-hover: #1b2233;  /* ホバー時の表面色 */
-    --color-accent: #5ba2e6;         /* 明るいブルー */
-    --color-accent-light: #89c0f5;   /* さらに明るいブルー */
-    --color-accent-bg: #1e3352;      /* ダークブルーベース */
-    --color-accent-glow: rgba(91, 162, 230, 0.25);
-    
-    /* テキストカラー */
-    --color-text-primary: #ecf0f5;   /* 主本文 */
-    --color-text-secondary: #a5b5c9; /* 副本文・ラベル */
-    --color-text-muted: #64758a;     /* 非アクティブ・補足 */
-
-    /* グラスモルフィズム (ダーク) */
-    --glass-bg: rgba(18, 23, 34, 0.8);
-    --glass-border: rgba(194, 224, 255, 0.15);
-}
 
 /* --------------------------------------------------------------------------
    2. リセット & ベーススタイル
@@ -249,23 +230,6 @@ body {
 .btn-secondary:hover {
     background: rgba(58, 140, 219, 0.12);
     color: var(--color-text-primary);
-}
-body.dark-mode .btn-secondary {
-    background: rgba(255, 255, 255, 0.03);
-    border-color: rgba(255, 255, 255, 0.08);
-}
-body.dark-mode .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.btn-icon {
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    border-radius: var(--radius-sm);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* --------------------------------------------------------------------------
@@ -1009,10 +973,6 @@ body.dark-mode .btn-secondary:hover {
     padding: 2px;
     border: 1px solid rgba(58, 140, 219, 0.12);
     margin-left: 8px;
-}
-body.dark-mode .view-toggle-group {
-    background: rgba(255, 255, 255, 0.03);
-    border-color: rgba(255, 255, 255, 0.08);
 }
 
 .btn-view-toggle {
