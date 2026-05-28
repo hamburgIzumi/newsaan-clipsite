@@ -188,24 +188,55 @@ document.addEventListener('DOMContentLoaded', () => {
         prevPageBtn.disabled = (currentPage === 1);
         nextPageBtn.disabled = (currentPage === totalPages);
 
-        // ページ番号ボタンリストの動的生成
+        // ページ番号ボタンリストの動的生成 (現在ページの前後1ページと、最初/最後を表示し、間を "..." で省略)
         pageNumbersContainer.innerHTML = '';
         
-        for (let i = 1; i <= totalPages; i++) {
+        const range = 1; // 現在ページの左右に表示する個数
+        let pagesToShow = [];
+        
+        // 常に最初のページは表示
+        pagesToShow.push(1);
+        
+        // 現在ページの前後を表示対象に追加
+        for (let i = currentPage - range; i <= currentPage + range; i++) {
+            if (i > 1 && i < totalPages) {
+                pagesToShow.push(i);
+            }
+        }
+        
+        // 常に最後のページを表示対象に追加
+        if (totalPages > 1) {
+            pagesToShow.push(totalPages);
+        }
+        
+        // 重複を除外して昇順にソート
+        pagesToShow = [...new Set(pagesToShow)].sort((a, b) => a - b);
+        
+        let prevPage = 0;
+        pagesToShow.forEach(page => {
+            // 前の表示ページとの間にギャップがある場合、"..." (省略記号) を挿入
+            if (prevPage > 0 && page - prevPage > 1) {
+                const ellipsis = document.createElement('span');
+                ellipsis.className = 'pagination-ellipsis';
+                ellipsis.textContent = '...';
+                pageNumbersContainer.appendChild(ellipsis);
+            }
+            
             const pageButton = document.createElement('button');
-            pageButton.className = `btn-page-number ${i === currentPage ? 'active' : ''}`;
-            pageButton.textContent = i;
+            pageButton.className = `btn-page-number ${page === currentPage ? 'active' : ''}`;
+            pageButton.textContent = page;
             
             // ページ番号クリック時のイベント
             pageButton.addEventListener('click', () => {
-                currentPage = i;
+                currentPage = page;
                 paginateAndRender();
                 // ページ上部にスムーズスクロール
                 clipsGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
             
             pageNumbersContainer.appendChild(pageButton);
-        }
+            prevPage = page;
+        });
 
         // コンテンツが多くて複数ページになる場合のみ、コントロールパネルを表示
         if (totalPages > 1) {
