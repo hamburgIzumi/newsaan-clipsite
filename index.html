@@ -29,6 +29,11 @@
                 </div>
             </div>
             <div class="header-actions">
+                <!-- テーマ切り替えトグル (ダーク/ライト) -->
+                <button id="theme-toggle" class="btn btn-secondary btn-icon" title="テーマ切り替え">
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                    <i data-lucide="sun" class="theme-icon-light" style="display: none;"></i>
+                </button>
                 <a href="https://www.twitch.tv/newsaan" target="_blank" rel="noopener noreferrer" class="btn btn-twitch">
                     <i data-lucide="twitch"></i>
                     <span>Twitchで視聴する</span>
@@ -110,9 +115,19 @@
                         <p id="data-updated-at" class="updated-at-text">データ更新日時: 読み込み中...</p>
                     </div>
                     <div class="clips-header-meta">
-                        <!-- 総クリップ数と検索ヒット件数のバッジ -->
-                        <span id="total-count-badge" class="badge badge-secondary">総数: -- 件</span>
-                        <span id="results-count" class="badge">0 件のクリップ</span>
+                        <!-- 総クリップ数と検索ヒット件数のバッジ ("本のクリップ" 表記) -->
+                        <span id="total-count-badge" class="badge badge-secondary">--本のクリップ</span>
+                        <span id="results-count" class="badge">0本のクリップ</span>
+                        
+                        <!-- 表示形式切り替えトグル (グリッド/リスト) -->
+                        <div class="view-toggle-group">
+                            <button id="view-grid-btn" class="btn-view-toggle active" title="グリッド表示">
+                                <i data-lucide="layout-grid"></i>
+                            </button>
+                            <button id="view-list-btn" class="btn-view-toggle" title="リスト表示">
+                                <i data-lucide="list"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
