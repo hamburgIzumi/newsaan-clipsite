@@ -6,13 +6,14 @@
    1. デザイン変数 (Design Tokens)
    -------------------------------------------------------------------------- */
 :root {
-    /* カラーパレット (青系パステルカラー＆ライトテーマ) */
-    --color-bg: #f2f7fc;             /* サイト全体の背景（極めて淡いパステルブルー） */
-    --color-surface: #ffffff;        /* コンポーネントの表面色（ピュアホワイト） */
-    --color-surface-hover: #eef5fc;  /* ホバー時の表面色（淡いパステルブルー） */
-    --color-accent: #3a8cdb;         /* メインアクセント (爽やかなパステルブルー) */
-    --color-accent-glow: rgba(58, 140, 219, 0.15); /* アクセント光彩用 */
+    /* カラーパレット (青系パステルカラー＆ライトテーマ) - #C2E0FF ベース */
+    --color-bg: #f2f7fc;             /* サイト全体の背景 */
+    --color-surface: #ffffff;        /* コンポーネントの表面色 */
+    --color-surface-hover: #eef5fc;  /* ホバー時の表面色 */
+    --color-accent: #3a8cdb;         /* メインアクセント */
     --color-accent-light: #7cb8f7;   /* 明るいパステルブルー */
+    --color-accent-bg: #C2E0FF;      /* ベースカラー（淡いブルー） */
+    --color-accent-glow: rgba(194, 224, 255, 0.4);
     
     /* ユーモラスでポップな差し色 (明るいパステルイエロー) */
     --color-yellow: #fbc02d;
@@ -25,19 +26,39 @@
 
     /* グラスモルフィズム（ライトなガラス風エフェクト） */
     --glass-bg: rgba(255, 255, 255, 0.85);
-    --glass-border: rgba(58, 140, 219, 0.12);
+    --glass-border: var(--color-accent-bg); /* #C2E0FFを境界線に */
     --glass-blur: blur(8px);
 
     /* 角丸・間隔・フォント */
-    --radius-sm: 8px;
-    --radius-md: 14px;
-    --radius-lg: 24px;
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-display: 'Outfit', var(--font-main);
     
     /* トランジション（滑らかなアニメーション用） */
     --transition-fast: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
     --transition-normal: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ダークモード用カラー定義 (body.dark-mode が有効な場合) */
+body.dark-mode {
+    --color-bg: #090c13;             /* ダークな青黒い背景 */
+    --color-surface: #121722;        /* ダークサーフェス */
+    --color-surface-hover: #1b2233;  /* ホバー時の表面色 */
+    --color-accent: #5ba2e6;         /* 明るいブルー */
+    --color-accent-light: #89c0f5;   /* さらに明るいブルー */
+    --color-accent-bg: #1e3352;      /* ダークブルーベース */
+    --color-accent-glow: rgba(91, 162, 230, 0.25);
+    
+    /* テキストカラー */
+    --color-text-primary: #ecf0f5;   /* 主本文 */
+    --color-text-secondary: #a5b5c9; /* 副本文・ラベル */
+    --color-text-muted: #64758a;     /* 非アクティブ・補足 */
+
+    /* グラスモルフィズム (ダーク) */
+    --glass-bg: rgba(18, 23, 34, 0.8);
+    --glass-border: rgba(194, 224, 255, 0.15);
 }
 
 /* --------------------------------------------------------------------------
@@ -221,13 +242,30 @@ body {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(58, 140, 219, 0.06);
     color: var(--color-text-secondary);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(58, 140, 219, 0.15);
 }
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(58, 140, 219, 0.12);
     color: var(--color-text-primary);
+}
+body.dark-mode .btn-secondary {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+body.dark-mode .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-icon {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* --------------------------------------------------------------------------
@@ -958,5 +996,117 @@ body {
     
     .btn-pagination span {
         display: inline; /* ページネーションの前へ・次へボタンはスマホでも文字表示 */
+    }
+}
+
+/* ==========================================================================
+   13. 表示形式切り替え (Grid / List View) ＆ 切り替えボタン
+   ========================================================================== */
+.view-toggle-group {
+    display: flex;
+    background: rgba(58, 140, 219, 0.08);
+    border-radius: 8px;
+    padding: 2px;
+    border: 1px solid rgba(58, 140, 219, 0.12);
+    margin-left: 8px;
+}
+body.dark-mode .view-toggle-group {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.btn-view-toggle {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.btn-view-toggle:hover {
+    color: var(--color-text-primary);
+}
+
+.btn-view-toggle.active {
+    background: var(--color-accent);
+    color: #ffffff;
+    box-shadow: 0 2px 6px var(--color-accent-glow);
+}
+
+/* === リスト表示 (List View) === */
+.clips-grid.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.clips-grid.list-view .clip-card {
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+    box-shadow: 0 3px 10px rgba(58, 140, 219, 0.03);
+}
+
+.clips-grid.list-view .clip-thumb {
+    width: 213px; /* 16:9比率高さ120px */
+    height: 100%;
+    padding-top: 0;
+    flex-shrink: 0;
+}
+
+.clips-grid.list-view .clip-thumb img {
+    height: 100%;
+}
+
+.clips-grid.list-view .clip-info {
+    padding: 16px 24px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.clips-grid.list-view .clip-title {
+    font-size: 1.05rem;
+    height: auto;
+    -webkit-line-clamp: 1;
+    flex: 1;
+}
+
+.clips-grid.list-view .clip-sub-info {
+    margin-top: 0;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .clips-grid.list-view .clip-card {
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .clips-grid.list-view .clip-thumb {
+        width: 100%;
+        padding-top: 56.25%;
+    }
+    .clips-grid.list-view .clip-info {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px;
+        gap: 12px;
+    }
+    .clips-grid.list-view .clip-sub-info {
+        justify-content: space-between;
+        width: 100%;
     }
 }

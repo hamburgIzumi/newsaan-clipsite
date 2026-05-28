@@ -35,6 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalVideoWrapper = document.querySelector('.modal-video-wrapper');
     const modalCloseBtn = document.querySelector('.modal-close-btn');
     const modalOverlay = document.querySelector('.modal-overlay');
+    
+    // テーマ切り替え・表示形式切り替え用DOM要素
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const moonIcon = themeToggleBtn.querySelector('.theme-icon-dark');
+    const sunIcon = themeToggleBtn.querySelector('.theme-icon-light');
+    
+    const viewGridBtn = document.getElementById('view-grid-btn');
+    const viewListBtn = document.getElementById('view-list-btn');
 
     // --- アプリケーションの状態管理 (State) ---
     let allClips = [];       // JSONからロードした全クリップデータを保持
@@ -42,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let currentPage = 1;     // 現在の表示ページ (1からスタート)
     const itemsPerPage = 100; // 1ページあたりの表示件数 (仕様：100件単位)
+    let currentView = 'grid'; // 'grid' または 'list' (表示形式)
 
     const filterState = {
         searchQuery: '',
@@ -181,8 +190,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- ページネーションコントロールのUI更新 ---
         
-        // ページ件数情報バッジを更新 (例: 125 件のクリップ (ページ 1/2))
-        resultsCount.textContent = `${totalItems} 件のクリップ (ページ ${currentPage}/${totalPages})`;
+        // ページ件数情報バッジを更新 ("nn本のクリップ" 表記)
+        resultsCount.textContent = `${totalItems}本のクリップ (ページ ${currentPage}/${totalPages})`;
 
         // 前へ / 次へ ボタンの無効化・有効化制御
         prevPageBtn.disabled = (currentPage === 1);
@@ -360,8 +369,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error('JSONのデータ構造が正しくありません。');
             }
 
-            // メタデータから総件数と更新日時を画面に反映
-            totalCountBadge.textContent = `総数: ${data.total_count.toLocaleString()} 件`;
+            // メタデータから総件数と更新日時を画面に反映 ("nn本のクリップ" 表記)
+            totalCountBadge.textContent = `${data.total_count.toLocaleString()}本のクリップ`;
             dataUpdatedAt.textContent = `データ更新日時: ${formatUpdatedAt(data.updated_at)}`;
 
             // 全クリップ配列を取得
@@ -542,8 +551,62 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // --- 13. テーマ切り替え機能 (ダーク/ライト) の実装 ---
+    function initTheme() {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            moonIcon.style.display = 'none';
+            sunIcon.style.display = 'block';
+        } else {
+            document.body.classList.remove('dark-mode');
+            moonIcon.style.display = 'block';
+            sunIcon.style.display = 'none';
+        }
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        const isDark = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        
+        if (isDark) {
+            moonIcon.style.display = 'none';
+            sunIcon.style.display = 'block';
+        } else {
+            moonIcon.style.display = 'block';
+            sunIcon.style.display = 'none';
+        }
+        
+        // Lucideアイコンの再読み込み
+        lucide.createIcons({ node: themeToggleBtn });
+    });
+
+    // --- 14. 表示形式切り替え機能 (グリッド/リスト) の実装 ---
+    function setViewMode(mode) {
+        currentView = mode;
+        localStorage.setItem('viewMode', mode);
+        
+        if (mode === 'list') {
+            clipsGrid.classList.add('list-view');
+            viewListBtn.classList.add('active');
+            viewGridBtn.classList.remove('active');
+        } else {
+            clipsGrid.classList.remove('list-view');
+            viewGridBtn.classList.add('active');
+            viewListBtn.classList.remove('active');
+        }
+    }
+
+    viewGridBtn.addEventListener('click', () => setViewMode('grid'));
+    viewListBtn.addEventListener('click', () => setViewMode('list'));
+
     // --- アプリケーションの初期起動処理 ---
     
+    // テーマと表示形式の初期読み込み
+    initTheme();
+    const savedView = localStorage.getItem('viewMode') || 'grid';
+    setViewMode(savedView);
+
     // 最初のLucideアイコンの全体読み込み
     lucide.createIcons();
 
