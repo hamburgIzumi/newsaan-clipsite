@@ -74,8 +74,8 @@ def main():
     window_size = timedelta(days=30)
     current_end = datetime.now(timezone.utc)
     
-    # 安全のための絶対終了日付（Twitchにクリップ機能が導入された初期である2017年1月1日を設定）
-    limit_date = datetime(2017, 1, 1, tzinfo=timezone.utc)
+    # 安全のための絶対終了日付（配信開始月である2020年7月より少し前の2020年6月1日を設定）
+    limit_date = datetime(2020, 6, 1, tzinfo=timezone.utc)
     
     # 連続してクリップが取得できなかった回数（活動前の期間をスキップして高速化するため）
     empty_streak = 0
