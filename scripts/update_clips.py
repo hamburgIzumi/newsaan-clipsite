@@ -67,36 +67,89 @@ def main():
         "first": 100
     }
 
-    all_clips_raw = []
-    cursor = None
+    all_clips_dict = {}
+    
+    # タイムウィンドウ分割による取得設定
+    # 1回のリクエスト時間窓を30日間とする（Twitch APIの1000件上限を回避するため）
+    window_size = timedelta(days=30)
+    current_end = datetime.now(timezone.utc)
+    
+    # 安全のための絶対終了日付（Twitchにクリップ機能が導入された初期である2017年1月1日を設定）
+    limit_date = datetime(2017, 1, 1, tzinfo=timezone.utc)
+    
+    # 連続してクリップが取得できなかった回数（活動前の期間をスキップして高速化するため）
+    empty_streak = 0
+    # 連続12回（約1年間）クリップが取得できない期間が続いたら、それ以前にはクリップが存在しないとみなして終了
+    max_empty_streak = 12
 
-    while True:
-        if cursor:
-            clips_params["after"] = cursor
+    print(f"  -> タイムウィンドウ分割で過去に遡って取得を開始します (限界値: {limit_date.strftime('%Y-%m-%d')})")
+
+    while current_end > limit_date:
+        current_start = max(current_end - window_size, limit_date)
+        
+        # 期間をRFC3339形式の文字列に変換
+        started_at_str = current_start.strftime("%Y-%m-%dT%H:%M:%SZ")
+        ended_at_str = current_end.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+        clips_params = {
+            "broadcaster_id": broadcaster_id,
+            "first": 100,
+            "started_at": started_at_str,
+            "ended_at": ended_at_str
+        }
+
+        window_clips_count = 0
+        cursor = None
+
+        print(f"  期間取得中: {started_at_str} 〜 {ended_at_str} ...")
+
+        while True:
+            if cursor:
+                clips_params["after"] = cursor
+            else:
+                clips_params.pop("after", None)
+
+            try:
+                res = requests.get(clips_url, headers=headers, params=clips_params)
+                res.raise_for_status()
+                res_data = res.json()
+            except Exception as e:
+                print(f"クリップ取得中にエラーが発生しました (累計: {len(all_clips_dict)}): {e}")
+                sys.exit(1)
+
+            clips = res_data.get("data", [])
+            if not clips:
+                break
+
+            for clip in clips:
+                clip_id = clip.get("id")
+                if clip_id:
+                    all_clips_dict[clip_id] = clip
+            
+            window_clips_count += len(clips)
+            
+            pagination = res_data.get("pagination", {})
+            cursor = pagination.get("cursor")
+            if not cursor:
+                break
+
+        print(f"    -> この期間で {window_clips_count} 件取得 (現在の累計ユニーク件数: {len(all_clips_dict)} 件)")
+
+        # 終了条件の判定
+        if window_clips_count == 0:
+            empty_streak += 1
+            if empty_streak >= max_empty_streak:
+                print(f"  [判定] 連続して {max_empty_streak} 回 (約1年間) クリップが取得できない期間が続いたため、遡りを終了します。")
+                break
         else:
-            clips_params.pop("after", None)
+            empty_streak = 0
 
-        try:
-            res = requests.get(clips_url, headers=headers, params=clips_params)
-            res.raise_for_status()
-            res_data = res.json()
-        except Exception as e:
-            print(f"クリップ取得中にエラーが発生しました (件数: {len(all_clips_raw)}): {e}")
-            sys.exit(1)
+        # 次の期間へ（さらに過去へ）
+        current_end = current_start
 
-        clips = res_data.get("data", [])
-        if not clips:
-            break
-
-        all_clips_raw.extend(clips)
-        print(f"  取得中... (+{len(clips)}件 / 累計: {len(all_clips_raw)}件)")
-
-        pagination = res_data.get("pagination", {})
-        cursor = pagination.get("cursor")
-        if not cursor:
-            break
-
-    print(f"すべてのクリップ取得完了！合計: {len(all_clips_raw)} 件")
+    # 辞書の値をリストに戻す
+    all_clips_raw = list(all_clips_dict.values())
+    print(f"すべてのクリップ取得完了！合計ユニーク件数: {len(all_clips_raw)} 件")
 
     # 4. game_id から game_name へのマッピングを解決
     print("4. ゲーム情報の解決中...")
