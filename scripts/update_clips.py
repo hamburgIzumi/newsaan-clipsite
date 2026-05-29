@@ -5,7 +5,8 @@ scripts/update_clips.py
 Twitch Helix REST APIから配信者 'newsaan' の全クリップデータを再帰的に取得し、
 更新日付と総件数のメタデータを付与した静的JSONファイル (data/clips.json) を自動生成するスクリプト。
 
-このスクリプトはGitHub Actions等で定期実行され、JAMstackのデータソースとして機能します。
+このスクリプトはGitHub Actions（GitHub Appによるブランチ保護ルールセット例外バイパス認証）等で
+定期実行され、JAMstackのデータソースとして機能します。
 """
 
 import os
@@ -222,6 +223,8 @@ def main():
     }
 
     # 保存処理
+    # 生成されたJSONデータは、GitHub Actionsワークフロー側で取得したGitHub Appの
+    # 認証トークンを使用して、保護ルール（ルールセット）をバイパスしてmainブランチに自動プッシュされます。
     script_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(script_dir, "..", "data")
     os.makedirs(data_dir, exist_ok=True)
