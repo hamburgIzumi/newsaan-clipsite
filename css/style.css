@@ -1109,23 +1109,17 @@ body {
 .clips-grid.list-view .clip-card {
     flex-direction: row;
     align-items: center;
-    height: 120px;
+    height: auto; /* テキストのみのコンパクトな一行リストにするため高さ自動 */
+    min-height: 60px; /* 最小高さを確保 */
     box-shadow: 0 3px 10px rgba(58, 140, 219, 0.03);
 }
 
 .clips-grid.list-view .clip-thumb {
-    width: 213px; /* 16:9比率高さ120px */
-    height: 100%;
-    padding-top: 0;
-    flex-shrink: 0;
-}
-
-.clips-grid.list-view .clip-thumb img {
-    height: 100%;
+    display: none; /* リスト表示時はサムネイルを非表示にする */
 }
 
 .clips-grid.list-view .clip-info {
-    padding: 16px 24px;
+    padding: 12px 24px; /* 上下パディングを12pxに最適化してスッキリとした一行に */
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -1173,15 +1167,11 @@ body {
         flex-direction: column;
         align-items: stretch;
     }
-    .clips-grid.list-view .clip-thumb {
-        width: 100%;
-        padding-top: 56.25%;
-    }
     .clips-grid.list-view .clip-info {
         flex-direction: column;
         align-items: stretch;
-        padding: 16px;
-        gap: 12px;
+        padding: 12px 16px; /* 縦並び時もコンパクトで美しい余白に最適化 */
+        gap: 8px; /* 縦並びの文字間隔を調整 */
     }
     .clips-grid.list-view .clip-sub-info {
         justify-content: space-between;
