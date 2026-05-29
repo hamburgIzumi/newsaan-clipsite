@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29 08:46:18",
+  "updated_at": "2026-05-29 13:49:50",
   "total_count": 1098,
   "clips": [
     {
@@ -6493,17 +6493,6 @@
       "creator_name": "psybiman"
     },
     {
-      "id": "IncredulousCrispyAnteaterDansGame-3jvCYup3wxTWP6ak",
-      "title": "余裕からの",
-      "game_name": "Escape from Tarkov",
-      "view_count": 12,
-      "created_at": "2025-11-17T16:06:17Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/446c70fb-6f9b-4d55-a4d6-499b2f63e6ff/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "IncredulousCrispyAnteaterDansGame-3jvCYup3wxTWP6ak",
-      "creator_name": "p0nk0xx"
-    },
-    {
       "id": "ClumsyBelovedTaroCoolStoryBob-0gcsmKy-n4FnpY22",
       "title": "チャネポが欲しいならツイッチだ←それはそう",
       "game_name": "Escape from Tarkov",
@@ -6513,6 +6502,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f9333525-1236-4662-abb9-eb659e2f25bd/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "ClumsyBelovedTaroCoolStoryBob-0gcsmKy-n4FnpY22",
       "creator_name": "あべしです"
+    },
+    {
+      "id": "IncredulousCrispyAnteaterDansGame-3jvCYup3wxTWP6ak",
+      "title": "余裕からの",
+      "game_name": "Escape from Tarkov",
+      "view_count": 12,
+      "created_at": "2025-11-17T16:06:17Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/446c70fb-6f9b-4d55-a4d6-499b2f63e6ff/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "IncredulousCrispyAnteaterDansGame-3jvCYup3wxTWP6ak",
+      "creator_name": "p0nk0xx"
     },
     {
       "id": "FaithfulSucculentWalletRlyTho-XG06DlxN0_8MJ1qn",
@@ -10552,17 +10552,6 @@
       "creator_name": "虹空"
     },
     {
-      "id": "EvilSmellyKittenJebaited-B2vBd3IEmj8IlT6o",
-      "title": "攻略法みつけた",
-      "game_name": "Escape from Tarkov",
-      "view_count": 8,
-      "created_at": "2025-12-29T00:48:14Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5997dfe2-9e56-4a6a-867f-a431cc378892/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "EvilSmellyKittenJebaited-B2vBd3IEmj8IlT6o",
-      "creator_name": "ebisun777"
-    },
-    {
       "id": "HotCautiousCaterpillarAMPTropPunch-0xyLv_nH-hyziGYC",
       "title": "ならってない倣う",
       "game_name": "Escape from Tarkov",
@@ -10572,6 +10561,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b39dfd5e-f718-427a-b252-c4ced8761948/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "HotCautiousCaterpillarAMPTropPunch-0xyLv_nH-hyziGYC",
       "creator_name": "amatsuki_ama"
+    },
+    {
+      "id": "EvilSmellyKittenJebaited-B2vBd3IEmj8IlT6o",
+      "title": "攻略法みつけた",
+      "game_name": "Escape from Tarkov",
+      "view_count": 8,
+      "created_at": "2025-12-29T00:48:14Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5997dfe2-9e56-4a6a-867f-a431cc378892/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "EvilSmellyKittenJebaited-B2vBd3IEmj8IlT6o",
+      "creator_name": "ebisun777"
     },
     {
       "id": "FurrySecretiveCattleOhMyDog-UoVHkKTmkwQPhgzC",
