@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29 13:49:50",
+  "updated_at": "2026-05-29 17:54:09",
   "total_count": 1098,
   "clips": [
     {
@@ -7615,17 +7615,6 @@
       "creator_name": "まのり"
     },
     {
-      "id": "GloriousSillyVanillaPipeHype-6g98E502i-CI18Uy",
-      "title": "気持ちよくなれない……",
-      "game_name": "Escape from Tarkov",
-      "view_count": 11,
-      "created_at": "2025-11-17T14:26:45Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bca7708d-be46-43e8-8c3a-d456a500a81d/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "GloriousSillyVanillaPipeHype-6g98E502i-CI18Uy",
-      "creator_name": "さえきっち"
-    },
-    {
       "id": "DeafFaithfulStrawberryM4xHeh-g-nTTnmowXD9QN5C",
       "title": "で、で、デッハ！？",
       "game_name": "Dead by Daylight",
@@ -7635,6 +7624,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f05811b8-24e2-4fd7-b5a1-c00a7f7f81ac/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "DeafFaithfulStrawberryM4xHeh-g-nTTnmowXD9QN5C",
       "creator_name": "naochiii246"
+    },
+    {
+      "id": "GloriousSillyVanillaPipeHype-6g98E502i-CI18Uy",
+      "title": "気持ちよくなれない……",
+      "game_name": "Escape from Tarkov",
+      "view_count": 11,
+      "created_at": "2025-11-17T14:26:45Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bca7708d-be46-43e8-8c3a-d456a500a81d/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "GloriousSillyVanillaPipeHype-6g98E502i-CI18Uy",
+      "creator_name": "さえきっち"
     },
     {
       "id": "RealThoughtfulCroquettePrimeMe-mYR0eFLHUoG-N4KK",
@@ -8583,17 +8583,6 @@
       "creator_name": "ピーカラ"
     },
     {
-      "id": "JoyousDifferentBillKippa-lBA0bGqUfLMbUech",
-      "title": "癇癪おこしてら",
-      "game_name": "Escape from Tarkov",
-      "view_count": 9,
-      "created_at": "2026-01-04T12:56:20Z",
-      "duration": "0:40",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c31e92d3-1767-4fb1-9334-684fd05989ec/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "JoyousDifferentBillKippa-lBA0bGqUfLMbUech",
-      "creator_name": "p0nk0xx"
-    },
-    {
       "id": "TastyThankfulStrawberryKeyboardCat-PmFQLP-Swut2yKQ6",
       "title": "それでも信じて行ってみる",
       "game_name": "Escape from Tarkov",
@@ -8603,6 +8592,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2ef7680f-24ae-4e5a-8e3c-da7a27c614b4/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "TastyThankfulStrawberryKeyboardCat-PmFQLP-Swut2yKQ6",
       "creator_name": "ピーカラ"
+    },
+    {
+      "id": "JoyousDifferentBillKippa-lBA0bGqUfLMbUech",
+      "title": "癇癪おこしてら",
+      "game_name": "Escape from Tarkov",
+      "view_count": 9,
+      "created_at": "2026-01-04T12:56:20Z",
+      "duration": "0:40",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c31e92d3-1767-4fb1-9334-684fd05989ec/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "JoyousDifferentBillKippa-lBA0bGqUfLMbUech",
+      "creator_name": "p0nk0xx"
     },
     {
       "id": "SlickSpunkyClintLitFam-kerfkT-t9kyR0OXH",
