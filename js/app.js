@@ -189,6 +189,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- ページネーションコントロールのUI更新 ---
         
+        // フィルター適用状況に応じて件数バッジのテキストを動的に更新 (Issue #38)
+        const isFiltered = filterState.searchQuery.trim() !== '' || 
+                           filterState.gameCategory !== 'all' || 
+                           filterState.dateStart !== '' || 
+                           filterState.dateEnd !== '';
+
+        if (isFiltered) {
+            totalCountBadge.textContent = `${totalItems.toLocaleString()}本のクリップ (全${allClips.length.toLocaleString()}本中)`;
+        } else {
+            totalCountBadge.textContent = `${allClips.length.toLocaleString()}本のクリップ`;
+        }
+
         // ページ件数情報バッジを更新 (シンプルにページ表示のみに変更)
         resultsCount.textContent = `ページ ${currentPage}/${totalPages}`;
 
