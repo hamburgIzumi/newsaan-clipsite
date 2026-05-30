@@ -901,6 +901,7 @@ body {
 /* ページネーションコンテナ */
 .pagination-container {
     display: flex;
+    flex-wrap: wrap; /* 横幅が狭いときに自動で美しく折り返されるように設定 (Issue #42) */
     justify-content: center;
     align-items: center;
     gap: 16px;
@@ -918,7 +919,8 @@ body {
 .page-numbers {
     display: flex;
     gap: 8px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* ページ番号内のボタンが縦に折り返されて崩れるのを防止 (Issue #42) */
+    flex-shrink: 0; /* 押し潰されるのを防止 */
     justify-content: center;
     align-items: center;
 }
@@ -970,6 +972,8 @@ body {
     gap: 6px;
     padding: 8px 16px;
     font-size: 0.9rem;
+    flex-shrink: 0; /* 押し潰されるのを防止 (Issue #42) */
+    white-space: nowrap; /* テキストとアイコンが縦並びに崩れるのを防止 */
 }
 
 .btn-pagination:disabled {
@@ -986,6 +990,7 @@ body {
     margin-left: 16px;
     padding-left: 16px;
     border-left: 1px solid rgba(255, 255, 255, 0.15);
+    flex-shrink: 0; /* 押し潰されるのを防止 (Issue #42) */
 }
 
 .page-jump-input {
@@ -1023,6 +1028,8 @@ body {
     height: 38px;
     font-size: 0.85rem;
     font-weight: 600;
+    flex-shrink: 0; /* 押し潰されるのを防止 (Issue #42) */
+    white-space: nowrap; /* テキストが縦に折り返されるのを防止 */
 }
 
 @media (max-width: 768px) {
