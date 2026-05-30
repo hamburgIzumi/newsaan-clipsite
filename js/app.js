@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevPageBtn = document.getElementById('prev-page-btn');
     const nextPageBtn = document.getElementById('next-page-btn');
     const pageNumbersContainer = document.getElementById('page-numbers');
+    const pageJumpInput = document.getElementById('page-jump-input');
+    const pageJumpBtn = document.getElementById('page-jump-btn');
+    const pageJumpUnit = document.querySelector('.page-jump-unit');
 
     // モーダル系DOM要素
     const videoModal = document.getElementById('video-modal');
@@ -203,6 +206,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // ページ件数情報バッジを更新 (シンプルにページ表示のみに変更)
         resultsCount.textContent = `ページ ${currentPage}/${totalPages}`;
+
+        // ページジャンプUIの最大値とラベルを動的更新 (Issue #39)
+        if (pageJumpInput) {
+            pageJumpInput.max = totalPages;
+            pageJumpInput.value = currentPage;
+        }
+        if (pageJumpUnit) {
+            pageJumpUnit.textContent = `/ ${totalPages} ページ`;
+        }
 
         // 前へ / 次へ ボタンの無効化・有効化制御
         prevPageBtn.disabled = (currentPage === 1);
@@ -534,6 +546,34 @@ document.addEventListener('DOMContentLoaded', () => {
             clipsGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
+
+    // ページ指定ジャンプ（移動）機能のイベントリスナー (Issue #39)
+    function handlePageJump() {
+        if (!pageJumpInput) return;
+        const targetPage = parseInt(pageJumpInput.value, 10);
+        const totalPages = Math.ceil(filteredClips.length / itemsPerPage) || 1;
+
+        if (targetPage >= 1 && targetPage <= totalPages) {
+            currentPage = targetPage;
+            paginateAndRender();
+            clipsGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            alert(`1から${totalPages}の間のページ番号を入力してください。`);
+            pageJumpInput.value = currentPage;
+        }
+    }
+
+    if (pageJumpBtn) {
+        pageJumpBtn.addEventListener('click', handlePageJump);
+    }
+    if (pageJumpInput) {
+        pageJumpInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                handlePageJump();
+            }
+        });
+    }
 
     // フィルター条件のリセットボタンクリック時
     resetFiltersBtn.addEventListener('click', () => {

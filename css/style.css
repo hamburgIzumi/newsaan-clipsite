@@ -976,6 +976,51 @@ body {
     pointer-events: none;
 }
 
+/* ページ指定ジャンプUI (Issue #39) */
+.page-jump-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.page-jump-input {
+    width: 60px;
+    height: 38px;
+    padding: 6px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-text-primary);
+    font-weight: 700;
+}
+
+/* スピンボタン（上下矢印）を非表示にしてスッキリさせる */
+.page-jump-input::-webkit-outer-spin-button,
+.page-jump-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.page-jump-input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.page-jump-unit {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+}
+
+.btn-page-jump {
+    padding: 8px 12px;
+    height: 38px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
 @media (max-width: 768px) {
     .clips-header {
         flex-direction: column;
@@ -1012,6 +1057,15 @@ body {
     
     .btn-pagination span {
         display: inline; /* 768px以下では前へ・次への文字を表示 */
+    }
+
+    .page-jump-container {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        width: 100%;
+        justify-content: center;
+        margin-top: 8px;
     }
 }
 
