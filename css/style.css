@@ -1002,10 +1002,12 @@ body {
 .page-jump-input::-webkit-outer-spin-button,
 .page-jump-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    appearance: none; /* 標準の appearance を併記して互換性警告を解決 */
     margin: 0;
 }
 .page-jump-input[type=number] {
     -moz-appearance: textfield;
+    appearance: textfield; /* 標準の appearance を併記して互換性警告を解決 */
 }
 
 .page-jump-unit {
