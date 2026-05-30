@@ -154,6 +154,12 @@
                         <span>次へ</span>
                         <i data-lucide="chevron-right"></i>
                     </button>
+                    <!-- ページ指定ジャンプ用UI (Issue #39) -->
+                    <div class="page-jump-container">
+                        <input type="number" id="page-jump-input" class="form-control page-jump-input" min="1" placeholder="ページ">
+                        <span class="page-jump-unit">/ -- ページ</span>
+                        <button id="page-jump-btn" class="btn btn-secondary btn-page-jump">移動</button>
+                    </div>
                 </div>
             </section>
         </main>
