@@ -90,6 +90,7 @@ body {
     color: var(--color-accent);
     background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-accent) 100%);
     -webkit-background-clip: text;
+    background-clip: text; /* 標準プロパティを併記して互換性警告を解消 */
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 2px 8px rgba(145, 70, 255, 0.3));
 }
@@ -575,6 +576,7 @@ body {
     /* 2行以上のテキストは三点リーダーで省略 */
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2; /* 標準プロパティを併記して互換性警告を解消 */
     -webkit-box-orient: vertical;
     overflow: hidden;
     height: 2.8em;
@@ -1187,6 +1189,7 @@ body {
     font-size: 1.05rem;
     height: auto;
     -webkit-line-clamp: 1;
+    line-clamp: 1; /* 標準プロパティを併記して互換性警告を解消 */
     flex: 1;
 }
 
