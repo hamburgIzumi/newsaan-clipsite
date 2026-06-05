@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const viewGridBtn = document.getElementById('view-grid-btn');
     const viewListBtn = document.getElementById('view-list-btn');
+    const clipsListHeader = document.getElementById('clips-list-header');
 
     // --- アプリケーションの状態管理 (State) ---
     let allClips = [];       // JSONからロードした全クリップデータを保持
@@ -278,6 +279,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             paginationContainer.style.display = 'none';
         }
+
+        // リストヘッダーの表示状態を更新
+        updateListHeaderVisibility();
 
         // ページネーション部分のLucideアイコンを再ロード
         lucide.createIcons({ node: paginationContainer });
@@ -611,6 +615,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    /**
+     * リスト表示時のヘッダー表示状態を切り替える関数
+     */
+    function updateListHeaderVisibility() {
+        if (!clipsListHeader) return;
+        // リスト表示かつ表示対象のクリップがある場合のみ表示
+        if (currentView === 'list' && filteredClips.length > 0) {
+            clipsListHeader.style.display = 'flex';
+        } else {
+            clipsListHeader.style.display = 'none';
+        }
+    }
+
     // --- 14. 表示形式切り替え機能 (グリッド/リスト) の実装 ---
     function setViewMode(mode) {
         currentView = mode;
@@ -625,6 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
             viewGridBtn.classList.add('active');
             viewListBtn.classList.remove('active');
         }
+        updateListHeaderVisibility();
     }
 
     viewGridBtn.addEventListener('click', () => setViewMode('grid'));

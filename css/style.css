@@ -1164,6 +1164,94 @@ body {
     box-shadow: 0 2px 6px var(--color-accent-glow);
 }
 
+/* === リスト表示ヘッダー (List View Header) === */
+.clips-list-header {
+    display: none; /* デフォルト非表示、JSで制御 */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 24px;
+    background: rgba(58, 140, 219, 0.05);
+    border: 1px solid rgba(58, 140, 219, 0.12);
+    border-radius: var(--radius-sm);
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    gap: 20px;
+}
+
+.clips-list-header .header-title {
+    flex: 1;
+}
+
+.clips-list-header .header-creator {
+    margin-right: auto;
+    padding-left: 20px;
+    min-width: 120px;
+}
+
+.clips-list-header .header-sub-info {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.clips-list-header .header-game {
+    font-weight: 700;
+}
+
+.clips-list-header .header-date {
+    font-weight: 700;
+}
+
+/* PC表示（画面幅769px以上）時の列幅固定と配置調整 */
+@media (min-width: 769px) {
+    /* クリップ作成者列の幅を固定 */
+    .clips-grid.list-view .clip-creator-info,
+    .clips-list-header .header-creator {
+        flex: 0 0 150px;
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    /* ゲームカテゴリ列の幅を固定 */
+    .clips-grid.list-view .clip-game,
+    .clips-list-header .header-game {
+        flex: 0 0 180px;
+        min-width: 180px;
+        max-width: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* 作成日列の幅を固定 */
+    .clips-grid.list-view .clip-date,
+    .clips-list-header .header-date {
+        flex: 0 0 100px;
+        min-width: 100px;
+        max-width: 100px;
+        text-align: right;
+    }
+
+    /* サブ情報ラッパーの幅を固定 (180px + 100px + gap 24px) */
+    .clips-grid.list-view .clip-sub-info,
+    .clips-list-header .header-sub-info {
+        flex: 0 0 304px;
+        gap: 24px;
+        justify-content: flex-end;
+    }
+}
+
+/* スマホ表示（画面幅768px以下）時のヘッダー非表示 */
+@media (max-width: 768px) {
+    .clips-list-header {
+        display: none !important;
+    }
+}
+
 /* === リスト表示 (List View) === */
 .clips-grid.list-view {
     display: flex;
