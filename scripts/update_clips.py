@@ -13,9 +13,36 @@ import os
 import sys
 import json
 import requests
+from urllib3.util import Retry
+from requests.adapters import HTTPAdapter
 from datetime import datetime, timezone, timedelta
 
+def get_session_with_retries():
+    """
+    一時的な接続エラーやサーバーエラーに対して指数バックオフで自動リトライするセッションを作成する。
+    また、セキュリティフィルター等によるブロックを回避しやすくするため User-Agent を設定する。
+    """
+    session = requests.Session()
+    retries = Retry(
+        total=5,
+        backoff_factor=1,
+        status_forcelist=[500, 502, 503, 504],
+        raise_on_status=False,
+        connect=5,
+        read=5
+    )
+    adapter = HTTPAdapter(max_retries=retries)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    session.headers.update({
+        "User-Agent": "newsaan-clipsite-bot/1.0 (https://github.com/sizumi/toybox)"
+    })
+    return session
+
 def main():
+    # セッションの初期化
+    session = get_session_with_retries()
+
     # 1. 環境変数の取得
     client_id = os.environ.get("TWITCH_CLIENT_ID")
     client_secret = os.environ.get("TWITCH_CLIENT_SECRET")
@@ -32,7 +59,8 @@ def main():
         "grant_type": "client_credentials"
     }
     try:
-        res = requests.post(token_url, params=token_params)
+        # トークン取得はparams(クエリ)ではなくdata(POSTボディ)を使用し、タイムアウトを設定
+        res = session.post(token_url, data=token_params, timeout=(5, 15))
         res.raise_for_status()
         token_data = res.json()
         access_token = token_data["access_token"]
@@ -49,7 +77,7 @@ def main():
     user_url = "https://api.twitch.tv/helix/users"
     user_params = {"login": "newsaan"}
     try:
-        res = requests.get(user_url, headers=headers, params=user_params)
+        res = session.get(user_url, headers=headers, params=user_params, timeout=(5, 15))
         res.raise_for_status()
         user_data = res.json().get("data", [])
         if not user_data:
@@ -111,7 +139,7 @@ def main():
                 clips_params.pop("after", None)
 
             try:
-                res = requests.get(clips_url, headers=headers, params=clips_params)
+                res = session.get(clips_url, headers=headers, params=clips_params, timeout=(5, 15))
                 res.raise_for_status()
                 res_data = res.json()
             except Exception as e:
@@ -168,7 +196,7 @@ def main():
         chunk = game_ids_list[i:i + chunk_size]
         games_url = "https://api.twitch.tv/helix/games"
         try:
-            res = requests.get(games_url, headers=headers, params={"id": chunk})
+            res = session.get(games_url, headers=headers, params={"id": chunk}, timeout=(5, 15))
             res.raise_for_status()
             games_data = res.json().get("data", [])
             for g in games_data:
