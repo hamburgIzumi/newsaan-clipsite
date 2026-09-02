@@ -140,8 +140,49 @@ document.addEventListener('DOMContentLoaded', () => {
         const newUrl = queryString ? `${window.location.pathname}?${queryString}` : window.location.pathname;
 
         if (window.location.pathname + window.location.search !== newUrl) {
-            history.replaceState(null, '', newUrl);
+            try {
+                history.replaceState(null, '', newUrl);
+            } catch (err) {
+                console.warn('newsaan-clipsite: history.replaceState によるURLの更新が制限されています:', err);
+            }
         }
+    }
+
+    /**
+     * 様々なブラウザ・プロトコル環境(http, https, file://)で確実にテキストをコピーする関数
+     */
+    async function copyTextToClipboard(text) {
+        // A. Modern Navigator Clipboard API
+        if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+            try {
+                await navigator.clipboard.writeText(text);
+                return true;
+            } catch (err) {
+                console.warn('navigator.clipboard.writeText に失敗したためフォールバックを実行します:', err);
+            }
+        }
+
+        // B. Classical document.execCommand('copy') フォールバック
+        try {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.top = '0';
+            textarea.style.left = '-9999px';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.focus();
+            textarea.select();
+            const successful = document.execCommand('copy');
+            document.body.removeChild(textarea);
+            if (successful) return true;
+        } catch (err) {
+            console.warn('execCommand copy に失敗しました:', err);
+        }
+
+        // C. 最終フォールバック: ユーザー手動コピー用 Prompt ダイアログ
+        const userSelection = prompt('以下のURLをコピーして共有してください:', text);
+        return userSelection !== null;
     }
 
     /**
@@ -515,18 +556,83 @@ document.addEventListener('DOMContentLoaded', () => {
             applyFiltersAndSort(false, true);
 
         } catch (error) {
-            console.error('newsaan-clipsite: 静的JSONのフェッチ中にエラーが発生しました:', error);
+            console.warn('newsaan-clipsite: 静的JSONのフェッチに失敗したため、ローカル用ダミーデータをフォールバック表示します:', error);
             
-            clipsGrid.innerHTML = `
-                <div class="error-state">
-                    <i data-lucide="x-circle" style="width: 48px; height: 48px; color: #ff4a4a; margin-bottom: 12px;"></i>
-                    <p>クリップデータの読み込みに失敗しました。<br>GitHub Actionsによるデータ更新が未完了の可能性があります。</p>
-                </div>
-            `;
-            resultsCount.textContent = 'エラー';
-            totalCountBadge.textContent = '総数: -- 件';
-            dataUpdatedAt.textContent = 'データ更新日時: 読み込み失敗';
-            lucide.createIcons({ node: clipsGrid });
+            // ローカル閲覧・検証用のダミーデータ (Mock Data)
+            const mockData = {
+                total_count: 5,
+                updated_at: '2026-09-02 12:00:00',
+                clips: [
+                    {
+                        id: 'mock-1',
+                        title: '【Apex】激闘のラスト1パーティ！クラッチ勝利シーン',
+                        game_name: 'Apex Legends',
+                        view_count: 45200,
+                        duration: '0:45',
+                        creator_name: 'newsaan_fan',
+                        created_at: '2026-08-20T18:30:00Z',
+                        thumbnail_url: 'img/new1.png',
+                        clip_slug: 'ApexClutchVictory'
+                    },
+                    {
+                        id: 'mock-2',
+                        title: '【VALORANT】エース達成！奇跡のワンタップ集',
+                        game_name: 'VALORANT',
+                        view_count: 12800,
+                        duration: '0:30',
+                        creator_name: 'newsaan_clip_maker',
+                        created_at: '2026-08-15T14:20:00Z',
+                        thumbnail_url: 'img/new1.png',
+                        clip_slug: 'ValorantAceHighlight'
+                    },
+                    {
+                        id: 'mock-3',
+                        title: '【雑談】ストッキング被って配信スタートするニュゥさん',
+                        game_name: 'Just Chatting',
+                        view_count: 98500,
+                        duration: '1:00',
+                        creator_name: 'newsaan_official',
+                        created_at: '2026-08-10T21:00:00Z',
+                        thumbnail_url: 'img/new1.png',
+                        clip_slug: 'JustChattingPantyhose'
+                    },
+                    {
+                        id: 'mock-4',
+                        title: '【Street Fighter 6】ジャストパリィからの逆転フルコンボ',
+                        game_name: 'Street Fighter 6',
+                        view_count: 8500,
+                        duration: '0:25',
+                        creator_name: 'gamer_clip',
+                        created_at: '2026-07-25T11:15:00Z',
+                        thumbnail_url: 'img/new1.png',
+                        clip_slug: 'SF6JustParry'
+                    },
+                    {
+                        id: 'mock-5',
+                        title: '【Minecraft】ダイヤ爆掘り中にマグマへ落ちる珍プレー',
+                        game_name: 'Minecraft',
+                        view_count: 32000,
+                        duration: '0:40',
+                        creator_name: 'funny_moments',
+                        created_at: '2026-07-01T09:00:00Z',
+                        thumbnail_url: 'img/new1.png',
+                        clip_slug: 'MinecraftLavaFail'
+                    }
+                ]
+            };
+
+            totalCountBadge.textContent = `${mockData.total_count.toLocaleString()}本のクリップ (ダミーデータ表示中)`;
+            dataUpdatedAt.textContent = `データ更新日時: ${formatUpdatedAt(mockData.updated_at)}`;
+            allClips = mockData.clips;
+
+            // ゲーム選択肢をダミーデータから構築
+            populateGameFilter();
+
+            // URLクエリから検索状態を復元
+            readStateFromURL();
+
+            // フィルタ適用
+            applyFiltersAndSort(false, true);
         }
     }
 
@@ -709,20 +815,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (shareUrlBtn) {
         shareUrlBtn.addEventListener('click', async () => {
             const currentUrl = window.location.href;
-            try {
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    await navigator.clipboard.writeText(currentUrl);
-                } else {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = currentUrl;
-                    textarea.style.position = 'fixed';
-                    textarea.style.opacity = '0';
-                    document.body.appendChild(textarea);
-                    textarea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textarea);
-                }
+            const success = await copyTextToClipboard(currentUrl);
 
+            if (success) {
                 const originalHTML = shareUrlBtn.innerHTML;
                 shareUrlBtn.innerHTML = `<i data-lucide="check"></i> <span>コピーしました！</span>`;
                 lucide.createIcons({ node: shareUrlBtn });
@@ -731,9 +826,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     shareUrlBtn.innerHTML = originalHTML;
                     lucide.createIcons({ node: shareUrlBtn });
                 }, 2000);
-            } catch (err) {
-                console.error('URLのコピーに失敗しました:', err);
-                alert('URLのコピーに失敗しました。アドレスバーのURLを直接コピーしてください。');
             }
         });
     }
