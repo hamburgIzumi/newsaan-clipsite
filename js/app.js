@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateEndInput = document.getElementById('date-end');
     const sortSelect = document.getElementById('sort-select');
     const resetFiltersBtn = document.getElementById('reset-filters-btn');
+    const shareUrlBtn = document.getElementById('share-url-btn');
     
     // ページネーション系DOM要素
     const paginationContainer = document.querySelector('.pagination-container');
@@ -59,6 +60,89 @@ document.addEventListener('DOMContentLoaded', () => {
         dateEnd: '',         // YYYY-MM-DD
         sortBy: 'views-desc' // デフォルトは閲覧数の多い順
     };
+
+    /**
+     * URLクエリパラメータから検索条件およびページ番号をパースし、UIと内部状態(State)に反映
+     */
+    function readStateFromURL() {
+        const params = new URLSearchParams(window.location.search);
+
+        const q = params.get('q') || '';
+        const logic = (params.get('logic') || 'AND').toUpperCase();
+        const game = params.get('game') || 'all';
+        const start = params.get('start') || '';
+        const end = params.get('end') || '';
+        const sort = params.get('sort') || 'views-desc';
+        const page = parseInt(params.get('page'), 10) || 1;
+
+        // 内部状態(filterState, currentPage)へ反映
+        filterState.searchQuery = q;
+        filterState.logic = (logic === 'OR') ? 'OR' : 'AND';
+        filterState.gameCategory = game;
+        filterState.dateStart = start;
+        filterState.dateEnd = end;
+        filterState.sortBy = sort;
+        currentPage = page > 0 ? page : 1;
+
+        // フォームUI要素への反映
+        if (searchInput) searchInput.value = q;
+        if (clearSearchBtn) clearSearchBtn.style.display = q.length > 0 ? 'block' : 'none';
+
+        if (filterState.logic === 'OR') {
+            if (logicOrInput) logicOrInput.checked = true;
+        } else {
+            if (logicAndInput) logicAndInput.checked = true;
+        }
+
+        if (gameSelect) {
+            const hasOption = Array.from(gameSelect.options).some(opt => opt.value === game);
+            if (hasOption) {
+                gameSelect.value = game;
+            } else if (game === 'all') {
+                gameSelect.value = 'all';
+            }
+        }
+
+        if (dateStartInput) dateStartInput.value = start;
+        if (dateEndInput) dateEndInput.value = end;
+        if (sortSelect) sortSelect.value = sort;
+    }
+
+    /**
+     * 現在の検索条件・ページ状態からURLクエリパラメータを生成しアドレスバーを更新
+     */
+    function updateURLFromState() {
+        const params = new URLSearchParams();
+
+        if (filterState.searchQuery.trim() !== '') {
+            params.set('q', filterState.searchQuery.trim());
+        }
+        if (filterState.logic === 'OR') {
+            params.set('logic', 'OR');
+        }
+        if (filterState.gameCategory !== 'all') {
+            params.set('game', filterState.gameCategory);
+        }
+        if (filterState.dateStart !== '') {
+            params.set('start', filterState.dateStart);
+        }
+        if (filterState.dateEnd !== '') {
+            params.set('end', filterState.dateEnd);
+        }
+        if (filterState.sortBy !== 'views-desc') {
+            params.set('sort', filterState.sortBy);
+        }
+        if (currentPage > 1) {
+            params.set('page', currentPage.toString());
+        }
+
+        const queryString = params.toString();
+        const newUrl = queryString ? `${window.location.pathname}?${queryString}` : window.location.pathname;
+
+        if (window.location.pathname + window.location.search !== newUrl) {
+            history.replaceState(null, '', newUrl);
+        }
+    }
 
     /**
      * 1. 閲覧数の表示用フォーマット変換関数
@@ -175,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * 6. ページングの処理 & 描画更新 (Pagination Engine)
      */
-    function paginateAndRender() {
+    function paginateAndRender(shouldUpdateURL = true) {
         const totalItems = filteredClips.length;
         const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
 
@@ -285,12 +369,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // ページネーション部分のLucideアイコンを再ロード
         lucide.createIcons({ node: paginationContainer });
+
+        // URLパラメータの同期
+        if (shouldUpdateURL) {
+            updateURLFromState();
+        }
     }
 
     /**
      * 7. 検索・フィルター・ソートロジックの適用 (Core Engine)
      */
-    function applyFiltersAndSort() {
+    function applyFiltersAndSort(resetPage = true, shouldUpdateURL = true) {
         let tempClips = [...allClips];
 
         // --- A. キーワード検索 (AND / OR 対応) ---
@@ -354,9 +443,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // 適用結果を状態変数に反映
         filteredClips = tempClips;
         
-        // 絞り込みが変わったため、ページ位置を最初のページ「1」に戻して描画
-        currentPage = 1;
-        paginateAndRender();
+        // 絞り込み条件が変わった場合は1ページ目に戻す (URLからの復元時はリセットしない)
+        if (resetPage) {
+            currentPage = 1;
+        }
+        paginateAndRender(shouldUpdateURL);
     }
 
     /**
@@ -377,6 +468,15 @@ document.addEventListener('DOMContentLoaded', () => {
             option.textContent = game;
             gameSelect.appendChild(option);
         });
+
+        // 状態(filterState.gameCategory)に合わせたゲーム選択肢の反映
+        const hasOption = Array.from(gameSelect.options).some(opt => opt.value === filterState.gameCategory);
+        if (hasOption) {
+            gameSelect.value = filterState.gameCategory;
+        } else {
+            filterState.gameCategory = 'all';
+            gameSelect.value = 'all';
+        }
     }
 
     /**
@@ -408,8 +508,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // ゲーム選択肢をデータから自動構築
             populateGameFilter();
 
-            // 最初の検索・フィルタリングの適用と描画
-            applyFiltersAndSort();
+            // URLクエリから検索状態およびページ番号を復元
+            readStateFromURL();
+
+            // 復元された条件で検索・フィルタリングを適用 (ページを1に戻さずに描画)
+            applyFiltersAndSort(false, true);
 
         } catch (error) {
             console.error('newsaan-clipsite: 静的JSONのフェッチ中にエラーが発生しました:', error);
@@ -598,8 +701,47 @@ document.addEventListener('DOMContentLoaded', () => {
         filterState.dateEnd = '';
         filterState.sortBy = 'views-desc';
 
-        // フィルタリングの再適用
+        // フィルタリングの再適用 (URLもクリア)
         applyFiltersAndSort();
+    });
+
+    // 検索URLを共有・コピーボタンのクリック時
+    if (shareUrlBtn) {
+        shareUrlBtn.addEventListener('click', async () => {
+            const currentUrl = window.location.href;
+            try {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    await navigator.clipboard.writeText(currentUrl);
+                } else {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = currentUrl;
+                    textarea.style.position = 'fixed';
+                    textarea.style.opacity = '0';
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                }
+
+                const originalHTML = shareUrlBtn.innerHTML;
+                shareUrlBtn.innerHTML = `<i data-lucide="check"></i> <span>コピーしました！</span>`;
+                lucide.createIcons({ node: shareUrlBtn });
+
+                setTimeout(() => {
+                    shareUrlBtn.innerHTML = originalHTML;
+                    lucide.createIcons({ node: shareUrlBtn });
+                }, 2000);
+            } catch (err) {
+                console.error('URLのコピーに失敗しました:', err);
+                alert('URLのコピーに失敗しました。アドレスバーのURLを直接コピーしてください。');
+            }
+        });
+    }
+
+    // ブラウザの戻る・進むボタン操作に対応 (popstate)
+    window.addEventListener('popstate', () => {
+        readStateFromURL();
+        applyFiltersAndSort(false, false);
     });
 
     // モーダルのイベントリスナーの登録
@@ -655,6 +797,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 最初のLucideアイコンの全体読み込み
     lucide.createIcons();
+
+    // URLから初期検索状態を取得してフォームUIに即時反映
+    readStateFromURL();
 
     // 静的JSONをロードしてアプリを起動
     loadClipsJson();
