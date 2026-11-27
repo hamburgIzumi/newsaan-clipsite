@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27 14:11:00",
-  "total_count": 2365,
+  "updated_at": "2026-11-28 00:21:44",
+  "total_count": 2367,
   "clips": [
     {
       "id": "AbstemiousMoralWormRedCoat--hzhQuX5FGj5g8iV",
@@ -78,17 +78,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9afc6d2e-d69e-43c9-8eeb-554dd1f2db26/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "PatientShortLaptopKeepo-nHNAUTnmM-Zx9zwM",
       "creator_name": "Chuulet"
-    },
-    {
-      "id": "SpikyPhilanthropicBunnyWoofer-3L3ih0WtupbR9uYo",
-      "title": "ラウンドを取り終わってから安全に蘇生される大将",
-      "game_name": "VALORANT",
-      "view_count": 10,
-      "created_at": "2026-09-28T06:27:13Z",
-      "duration": "0:50",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/05bdc0ca-cb57-4503-b7ec-9f88da548284/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "SpikyPhilanthropicBunnyWoofer-3L3ih0WtupbR9uYo",
-      "creator_name": "ジェヴァ"
     },
     {
       "id": "TangentialVenomousThymeResidentSleeper-9D7O15hkogmvAtiF",
@@ -210,17 +199,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9e6d43ed-0b7c-4ce7-86b3-82b4467e44e5/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "HorribleOilyOpossumCeilingCat-GjkFJGQhWeRyrgPI",
       "creator_name": "ながやまめめ"
-    },
-    {
-      "id": "GoodWealthyLeopardYouWHY-8U0KMg13Ib9Dtt1U",
-      "title": "新機能シャッターパーティーの使い時",
-      "game_name": "VALORANT",
-      "view_count": 4,
-      "created_at": "2026-09-28T06:38:10Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/29309dbd-9651-40a5-b552-88e49607e1f2/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "GoodWealthyLeopardYouWHY-8U0KMg13Ib9Dtt1U",
-      "creator_name": "ジェヴァ"
     },
     {
       "id": "WonderfulHumbleShingleDatSheffy-X5uQyVnEvdvZVkzV",
@@ -452,6 +430,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a66dd6f8-2b8b-4b57-8f50-b5e5b6ebfa7c/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "CheerfulDarkGrasshopperCopyThis-oWtkrLR2htKU2O3W",
       "creator_name": "dot_desu"
+    },
+    {
+      "id": "SpikyPhilanthropicBunnyWoofer-3L3ih0WtupbR9uYo",
+      "title": "ラウンドを取り終わってから安全に蘇生される大将",
+      "game_name": "VALORANT",
+      "view_count": 10,
+      "created_at": "2026-09-28T06:27:13Z",
+      "duration": "0:50",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/05bdc0ca-cb57-4503-b7ec-9f88da548284/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "SpikyPhilanthropicBunnyWoofer-3L3ih0WtupbR9uYo",
+      "creator_name": "ジェヴァ"
     },
     {
       "id": "TolerantAffluentBoarWholeWheat-4-z5zK4aY8BqEyMg",
@@ -740,6 +729,17 @@
       "creator_name": "ﾃﾂﾛー"
     },
     {
+      "id": "GoodWealthyLeopardYouWHY-8U0KMg13Ib9Dtt1U",
+      "title": "新機能シャッターパーティーの使い時",
+      "game_name": "VALORANT",
+      "view_count": 4,
+      "created_at": "2026-09-28T06:38:10Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/29309dbd-9651-40a5-b552-88e49607e1f2/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "GoodWealthyLeopardYouWHY-8U0KMg13Ib9Dtt1U",
+      "creator_name": "ジェヴァ"
+    },
+    {
       "id": "AbnegateGentleCoffeeBCWarrior-VJH19OwmlVgFz4v6",
       "title": "フリーズ芸からの爆笑あざす",
       "game_name": "Halloween: The Game",
@@ -762,17 +762,6 @@
       "creator_name": "ebisun777"
     },
     {
-      "id": "TenderFairFrogYouWHY-7xFj6w5Itf7ryczZ",
-      "title": "くらやみ、あんこく",
-      "game_name": "FINAL FANTASY XIV ONLINE",
-      "view_count": 4,
-      "created_at": "2026-09-22T20:37:12Z",
-      "duration": "0:21",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1a040211-53cd-40e2-9dff-bc3917a2db6f/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "TenderFairFrogYouWHY-7xFj6w5Itf7ryczZ",
-      "creator_name": "たっ"
-    },
-    {
       "id": "KindThirstyOstrichWOOP-5gWsgHpLw1bHPhDl",
       "title": "下手すぎました、すみません",
       "game_name": "FINAL FANTASY XIV ONLINE",
@@ -782,6 +771,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fe9e8548-cabb-4bf0-bcaa-93223b707702/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "KindThirstyOstrichWOOP-5gWsgHpLw1bHPhDl",
       "creator_name": "ebisun777"
+    },
+    {
+      "id": "TenderFairFrogYouWHY-7xFj6w5Itf7ryczZ",
+      "title": "くらやみ、あんこく",
+      "game_name": "FINAL FANTASY XIV ONLINE",
+      "view_count": 4,
+      "created_at": "2026-09-22T20:37:12Z",
+      "duration": "0:21",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1a040211-53cd-40e2-9dff-bc3917a2db6f/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "TenderFairFrogYouWHY-7xFj6w5Itf7ryczZ",
+      "creator_name": "たっ"
     },
     {
       "id": "PricklyFunnyPangolinKappaWealth-mxTC5lrqzJmbnjy_",
@@ -1257,17 +1257,6 @@
       "creator_name": "carl2727carl"
     },
     {
-      "id": "LachrymoseObservantOxRalpherZ-yqGri1dqS4tC9ei4",
-      "title": "むりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむり",
-      "game_name": "Dead by Daylight",
-      "view_count": 9,
-      "created_at": "2026-07-26T11:01:13Z",
-      "duration": "0:37",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6dd216ae-7aff-4df3-a116-5667814e1319/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "LachrymoseObservantOxRalpherZ-yqGri1dqS4tC9ei4",
-      "creator_name": "amatsuki_ama"
-    },
-    {
       "id": "FriendlyCrypticPelicanKappaClaus-8_X7xsCRYPtv_VGa",
       "title": "そもそもいねぇんだよ",
       "game_name": "Dead by Daylight",
@@ -1277,6 +1266,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a96dbc63-32bb-4162-ad18-6e474f649c73/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "FriendlyCrypticPelicanKappaClaus-8_X7xsCRYPtv_VGa",
       "creator_name": "ebisun777"
+    },
+    {
+      "id": "LachrymoseObservantOxRalpherZ-yqGri1dqS4tC9ei4",
+      "title": "むりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむりむり",
+      "game_name": "Dead by Daylight",
+      "view_count": 9,
+      "created_at": "2026-07-26T11:01:13Z",
+      "duration": "0:37",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6dd216ae-7aff-4df3-a116-5667814e1319/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "LachrymoseObservantOxRalpherZ-yqGri1dqS4tC9ei4",
+      "creator_name": "amatsuki_ama"
     },
     {
       "id": "RoundSpunkyTubersHeyGirl-Ws3J2TZE1Nao4pV8",
@@ -1345,17 +1345,6 @@
       "creator_name": "ebisun777"
     },
     {
-      "id": "SplendidOriginalApeTheRinger-A4DhVMlEXa_DHHEd",
-      "title": "Get you！のニュー",
-      "game_name": "Dead by Daylight",
-      "view_count": 7,
-      "created_at": "2026-06-30T14:57:53Z",
-      "duration": "0:31",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1514635d-4262-41c7-9b4f-e0e61a5faa35/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "SplendidOriginalApeTheRinger-A4DhVMlEXa_DHHEd",
-      "creator_name": "さぁうぅ"
-    },
-    {
       "id": "ArbitraryPiliableFennelVoHiYo-R-kRjiUiIvNEI7JC",
       "title": "普段の主",
       "game_name": "Dead by Daylight",
@@ -1389,17 +1378,6 @@
       "creator_name": "amatsuki_ama"
     },
     {
-      "id": "PiercingWimpySpaghetti4Head-Y0I6KhwZevKzpKMZ",
-      "title": "本物のチェイス",
-      "game_name": "Dead by Daylight",
-      "view_count": 3,
-      "created_at": "2026-06-30T11:33:00Z",
-      "duration": "0:42",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e9ac9428-dd81-4426-9df2-2b5aa96f3935/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "PiercingWimpySpaghetti4Head-Y0I6KhwZevKzpKMZ",
-      "creator_name": "愛男"
-    },
-    {
       "id": "AbstemiousBovineGorillaTebowing-8MrdQN60XLOvS4mo",
       "title": "土用の丑の日でうなぎ買わなかった理由が意味不明でとりあえず値段のせいにしてオチも微妙だった時のnewsaan",
       "game_name": "Dead by Daylight",
@@ -1409,17 +1387,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cbaab973-8ca8-4ef0-896e-dd65afc72617/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "AbstemiousBovineGorillaTebowing-8MrdQN60XLOvS4mo",
       "creator_name": "amatsuki_ama"
-    },
-    {
-      "id": "LaconicWimpyAardvarkTheThing-J23HPTYmicQzijk7",
-      "title": "Get you！のニュー2",
-      "game_name": "Dead by Daylight",
-      "view_count": 3,
-      "created_at": "2026-06-30T15:00:42Z",
-      "duration": "0:22",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6a22c531-f887-472e-ba55-18a98382f3a6/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "LaconicWimpyAardvarkTheThing-J23HPTYmicQzijk7",
-      "creator_name": "さぁうぅ"
     },
     {
       "id": "LongCourteousChoughAMPTropPunch-FhUNMWIDfIWGQsYY",
@@ -1442,17 +1409,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1b43a22b-579a-4753-9172-20a8d4579326/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "ToughCleanPelicanNinjaGrumpy-qbQZzZTXazUBIBHc",
       "creator_name": "いないよ"
-    },
-    {
-      "id": "SmallAmazingTriangleDuDudu-fC_F8WCDER7D_Irp",
-      "title": "俺は治してくれないんかい",
-      "game_name": "Dead by Daylight",
-      "view_count": 3,
-      "created_at": "2026-06-30T11:49:34Z",
-      "duration": "0:59",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cdf3f636-15c7-48ad-a2d1-a6941424189d/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "SmallAmazingTriangleDuDudu-fC_F8WCDER7D_Irp",
-      "creator_name": "ebisun777"
     },
     {
       "id": "AlluringBombasticDiscPartyTime-iUyU15V1wNO64MHn",
@@ -1697,6 +1653,17 @@
       "creator_name": "ちゃみする"
     },
     {
+      "id": "SplendidOriginalApeTheRinger-A4DhVMlEXa_DHHEd",
+      "title": "Get you！のニュー",
+      "game_name": "Dead by Daylight",
+      "view_count": 7,
+      "created_at": "2026-06-30T14:57:53Z",
+      "duration": "0:31",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1514635d-4262-41c7-9b4f-e0e61a5faa35/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "SplendidOriginalApeTheRinger-A4DhVMlEXa_DHHEd",
+      "creator_name": "さぁうぅ"
+    },
+    {
       "id": "FragileConcernedGarbageKappaWealth-fMNOc0TS4woXxJKf",
       "title": "主なしでやりきりました",
       "game_name": "FINAL FANTASY XIV ONLINE",
@@ -1862,6 +1829,17 @@
       "creator_name": "ebisun777"
     },
     {
+      "id": "PiercingWimpySpaghetti4Head-Y0I6KhwZevKzpKMZ",
+      "title": "本物のチェイス",
+      "game_name": "Dead by Daylight",
+      "view_count": 3,
+      "created_at": "2026-06-30T11:33:00Z",
+      "duration": "0:42",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e9ac9428-dd81-4426-9df2-2b5aa96f3935/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "PiercingWimpySpaghetti4Head-Y0I6KhwZevKzpKMZ",
+      "creator_name": "愛男"
+    },
+    {
       "id": "AntsyPrettiestBorkWTRuck-fcxb-emk3tb8IoYD",
       "title": "もう笑っちゃっていい",
       "game_name": "Dead by Daylight",
@@ -1871,6 +1849,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/36875439-1baa-4f5a-99f0-9fef6f29e28f/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "AntsyPrettiestBorkWTRuck-fcxb-emk3tb8IoYD",
       "creator_name": "ebisun777"
+    },
+    {
+      "id": "LaconicWimpyAardvarkTheThing-J23HPTYmicQzijk7",
+      "title": "Get you！のニュー2",
+      "game_name": "Dead by Daylight",
+      "view_count": 3,
+      "created_at": "2026-06-30T15:00:42Z",
+      "duration": "0:22",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6a22c531-f887-472e-ba55-18a98382f3a6/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "LaconicWimpyAardvarkTheThing-J23HPTYmicQzijk7",
+      "creator_name": "さぁうぅ"
     },
     {
       "id": "ColdAdventurousCheesecakeAsianGlow-vLlwKZ1vq_ioF4xU",
@@ -1893,6 +1882,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e6141918-ae3a-4aaf-851f-4fc15165deae/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "PerfectHardMeerkatDansGame-mkA0ahWRLH5YeNNT",
       "creator_name": "愛男"
+    },
+    {
+      "id": "SmallAmazingTriangleDuDudu-fC_F8WCDER7D_Irp",
+      "title": "俺は治してくれないんかい",
+      "game_name": "Dead by Daylight",
+      "view_count": 3,
+      "created_at": "2026-06-30T11:49:34Z",
+      "duration": "0:59",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cdf3f636-15c7-48ad-a2d1-a6941424189d/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "SmallAmazingTriangleDuDudu-fC_F8WCDER7D_Irp",
+      "creator_name": "ebisun777"
     },
     {
       "id": "CalmAnnoyingCurryPJSalt-EtRw6BFQUss1qM3g",
@@ -1994,6 +1994,17 @@
       "creator_name": "たっ"
     },
     {
+      "id": "EmpathicAbrasiveGull4Head-HlwURRSp5HU9_yII",
+      "title": "ガブ、覚醒",
+      "game_name": "FINAL FANTASY XIV ONLINE",
+      "view_count": 15,
+      "created_at": "2026-05-18T15:37:47Z",
+      "duration": "0:10",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a3cf3c55-cb4c-4a0e-aa02-bcb5e2528614/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "EmpathicAbrasiveGull4Head-HlwURRSp5HU9_yII",
+      "creator_name": "konbu_maan"
+    },
+    {
       "id": "UnsightlyAltruisticCobraHotPokket-kVatb7z0fF9w-5nl",
       "title": "How to 穴あきストッキングの被りかた",
       "game_name": "Windrose",
@@ -2025,17 +2036,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3f1a1c03-8999-4b34-8fbc-92c20ea08d11/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "FairMildPelicanLitty-HfWod2sXzJTZuoNI",
       "creator_name": "p0nk0xx"
-    },
-    {
-      "id": "EmpathicAbrasiveGull4Head-HlwURRSp5HU9_yII",
-      "title": "ガブ、覚醒",
-      "game_name": "FINAL FANTASY XIV ONLINE",
-      "view_count": 14,
-      "created_at": "2026-05-18T15:37:47Z",
-      "duration": "0:10",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a3cf3c55-cb4c-4a0e-aa02-bcb5e2528614/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "EmpathicAbrasiveGull4Head-HlwURRSp5HU9_yII",
-      "creator_name": "konbu_maan"
     },
     {
       "id": "LaconicBlueChickenOneHand-d5vVsSlTE8Trb82c",
@@ -2115,6 +2115,17 @@
       "creator_name": "まのり"
     },
     {
+      "id": "AgitatedHedonisticSowCoolStoryBro-pIJpnICYEl1aUFkF",
+      "title": "かっぴいいいいいいいいいいいいいいいいい",
+      "game_name": "Windrose",
+      "view_count": 8,
+      "created_at": "2026-05-16T11:48:00Z",
+      "duration": "0:08",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cb6f48a2-2197-45fd-8dd7-2691f1aba718/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "AgitatedHedonisticSowCoolStoryBro-pIJpnICYEl1aUFkF",
+      "creator_name": "たっ"
+    },
+    {
       "id": "DeliciousPlainCurlewThisIsSparta-UQzZVZZWb2OzbLV2",
       "title": "コラみたいになった",
       "game_name": "FINAL FANTASY XIV ONLINE",
@@ -2157,17 +2168,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9a325d6a-e0c7-431d-8150-b72968dcf747/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "FamousOpenSandpiperFunRun-ulgdk29tFnrXJTY9",
       "creator_name": "愛男"
-    },
-    {
-      "id": "AgitatedHedonisticSowCoolStoryBro-pIJpnICYEl1aUFkF",
-      "title": "かっぴいいいいいいいいいいいいいいいいい",
-      "game_name": "Windrose",
-      "view_count": 7,
-      "created_at": "2026-05-16T11:48:00Z",
-      "duration": "0:08",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cb6f48a2-2197-45fd-8dd7-2691f1aba718/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "AgitatedHedonisticSowCoolStoryBro-pIJpnICYEl1aUFkF",
-      "creator_name": "たっ"
     },
     {
       "id": "CorrectPhilanthropicPidgeonStoneLightning-1uD0O_iaCT63UWQp",
@@ -3259,17 +3259,6 @@
       "creator_name": "ebisun777"
     },
     {
-      "id": "MoistCuteMangetoutKappaRoss-gszuEedtK9JlE7Vg",
-      "title": "光の護封剣（物理攻撃）",
-      "game_name": "ELDEN RING",
-      "view_count": 2,
-      "created_at": "2026-03-29T16:16:52Z",
-      "duration": "0:26",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fbec6765-15ff-4362-b352-35aafbc2d3ff/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "MoistCuteMangetoutKappaRoss-gszuEedtK9JlE7Vg",
-      "creator_name": "たっ"
-    },
-    {
       "id": "SucculentWrongWaffleHoneyBadger-S_-dkoDJDijloZTe",
       "title": "見直し用",
       "game_name": "ELDEN RING",
@@ -3279,6 +3268,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9432b713-9316-4453-92c9-44bdcc3fb7f8/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "SucculentWrongWaffleHoneyBadger-S_-dkoDJDijloZTe",
       "creator_name": "konbu_maan"
+    },
+    {
+      "id": "MoistCuteMangetoutKappaRoss-gszuEedtK9JlE7Vg",
+      "title": "光の護封剣（物理攻撃）",
+      "game_name": "ELDEN RING",
+      "view_count": 2,
+      "created_at": "2026-03-29T16:16:52Z",
+      "duration": "0:26",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fbec6765-15ff-4362-b352-35aafbc2d3ff/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "MoistCuteMangetoutKappaRoss-gszuEedtK9JlE7Vg",
+      "creator_name": "たっ"
     },
     {
       "id": "EasySweetRatRalpherZ-KDxp9bU6TFz5eR2o",
@@ -3325,17 +3325,6 @@
       "creator_name": "carl2727carl"
     },
     {
-      "id": "EntertainingAbnegateSwallowNononoCat-u7JdyjuRWqh9_9uB",
-      "title": "それは壁抜きィ！",
-      "game_name": "RESIDENT EVIL: requiem",
-      "view_count": 1,
-      "created_at": "2026-03-16T15:18:49Z",
-      "duration": "0:56",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b004ea6f-343c-41b4-9471-f04f3a865b3d/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "EntertainingAbnegateSwallowNononoCat-u7JdyjuRWqh9_9uB",
-      "creator_name": "お気楽品行方正おじさん"
-    },
-    {
       "id": "AlluringTacitArmadilloBloodTrail-kzczeTdwHANt1EXu",
       "title": "タイミング",
       "game_name": "Resident Evil 6",
@@ -3345,6 +3334,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7e5f66fd-7ace-4033-bbc9-503f016a3395/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "AlluringTacitArmadilloBloodTrail-kzczeTdwHANt1EXu",
       "creator_name": "carl2727carl"
+    },
+    {
+      "id": "EntertainingAbnegateSwallowNononoCat-u7JdyjuRWqh9_9uB",
+      "title": "それは壁抜きィ！",
+      "game_name": "RESIDENT EVIL: requiem",
+      "view_count": 1,
+      "created_at": "2026-03-16T15:18:49Z",
+      "duration": "0:56",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b004ea6f-343c-41b4-9471-f04f3a865b3d/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "EntertainingAbnegateSwallowNononoCat-u7JdyjuRWqh9_9uB",
+      "creator_name": "お気楽品行方正おじさん"
     },
     {
       "id": "BeautifulBlindingLobsterHoneyBadger-cPiEzgp96V6-Puyi",
@@ -3743,17 +3743,6 @@
       "creator_name": "ピーカラ"
     },
     {
-      "id": "SuaveCalmLyrebirdBloodTrail-LcqLkmDjDXtiBI61",
-      "title": "野良モンスターハンターワイルズ",
-      "game_name": "Escape from Tarkov",
-      "view_count": 7,
-      "created_at": "2026-01-01T13:10:54Z",
-      "duration": "0:45",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6435ba89-0eae-4ceb-b84f-51965fe99cfe/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "SuaveCalmLyrebirdBloodTrail-LcqLkmDjDXtiBI61",
-      "creator_name": "ebisun777"
-    },
-    {
       "id": "BelovedAnimatedYamAMPEnergyCherry-ecYwzccimVudgzIn",
       "title": "チョット、ドイテホシイ",
       "game_name": "Escape from Tarkov",
@@ -3851,17 +3840,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/978a723c-26f2-488f-9661-5f1b7679fa26/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "AlertTalentedNewtOSkomodo-54w8xGOl_vTyeADa",
       "creator_name": "ぴろきちーツイッチ"
-    },
-    {
-      "id": "FaithfulGenerousAsparagusMingLee-HAI9PXIK44Q0ucYS",
-      "title": "どこから見えるか教えてくれるぽぽちゃん",
-      "game_name": "Escape from Tarkov",
-      "view_count": 4,
-      "created_at": "2026-01-01T07:57:01Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6d2730af-5135-4752-9749-89fe3e320e6b/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "FaithfulGenerousAsparagusMingLee-HAI9PXIK44Q0ucYS",
-      "creator_name": "ピーカラ"
     },
     {
       "id": "ShyLightPigeonUncleNox-2bJUI2fTmR16t4kh",
@@ -3963,17 +3941,6 @@
       "creator_name": "お気楽品行方正おじさん"
     },
     {
-      "id": "FurryCrackyWatercressAMPEnergy-gZDREiJ1CeZhZsuv",
-      "title": "英語禁止縛りで",
-      "game_name": "Escape from Tarkov",
-      "view_count": 3,
-      "created_at": "2026-01-03T08:48:28Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6ddc81d1-93db-400f-8862-40817c616c55/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "FurryCrackyWatercressAMPEnergy-gZDREiJ1CeZhZsuv",
-      "creator_name": "ebisun777"
-    },
-    {
       "id": "BraveLachrymosePigeonPraiseIt-vy7ad4WSCZ5KsqiV",
       "title": "ちわーーーっす",
       "game_name": "Escape from Tarkov",
@@ -3983,6 +3950,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b0d92793-bf65-4c49-8028-e57e5b4e3ffc/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "BraveLachrymosePigeonPraiseIt-vy7ad4WSCZ5KsqiV",
       "creator_name": "まのり"
+    },
+    {
+      "id": "FurryCrackyWatercressAMPEnergy-gZDREiJ1CeZhZsuv",
+      "title": "英語禁止縛りで",
+      "game_name": "Escape from Tarkov",
+      "view_count": 3,
+      "created_at": "2026-01-03T08:48:28Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6ddc81d1-93db-400f-8862-40817c616c55/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "FurryCrackyWatercressAMPEnergy-gZDREiJ1CeZhZsuv",
+      "creator_name": "ebisun777"
     },
     {
       "id": "EndearingLaconicNarwhalBudStar-GEivjzpvth2Zb4RR",
@@ -4018,17 +3996,6 @@
       "creator_name": "ほぇたん"
     },
     {
-      "id": "VictoriousPatientToothCorgiDerp-BVlP26HTbyr73v5M",
-      "title": "クリアリングが甘すぎてハスハスハスハス",
-      "game_name": "Escape from Tarkov",
-      "view_count": 2,
-      "created_at": "2026-01-01T11:58:29Z",
-      "duration": "0:27",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7df932f8-cff4-41dd-a77d-18d8ac970eaf/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "VictoriousPatientToothCorgiDerp-BVlP26HTbyr73v5M",
-      "creator_name": "ぴろきちーツイッチ"
-    },
-    {
       "id": "HungryEndearingTeaDansGame-XduoWHs0rc9gZE9G",
       "title": "ちょっ、ちょっ、ちょっ",
       "game_name": "Escape from Tarkov",
@@ -4060,28 +4027,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5ea7019c-20d2-4a6a-ba31-f9e7c41a07f5/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "FriendlyBlazingSharkPRChase-yFqkOgYy71pV0JeY",
       "creator_name": "ebisun777"
-    },
-    {
-      "id": "EagerCarefulPassionfruitTBTacoLeft-krTUIkxvm_oRWNV0",
-      "title": "落ち着くために心拍をマッサージするぬーさん",
-      "game_name": "Escape from Tarkov",
-      "view_count": 2,
-      "created_at": "2026-01-01T11:26:41Z",
-      "duration": "0:39",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a8fe12e2-b79e-4cd9-9f8b-1be79c3cfc1d/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "EagerCarefulPassionfruitTBTacoLeft-krTUIkxvm_oRWNV0",
-      "creator_name": "ぴろきちーツイッチ"
-    },
-    {
-      "id": "RoundSmoothYakNinjaGrumpy-Wtrk3fdBgrkpkJPq",
-      "title": "命の回復、地面に消える",
-      "game_name": "Escape from Tarkov",
-      "view_count": 2,
-      "created_at": "2026-01-01T13:18:36Z",
-      "duration": "0:12",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0a3aacb8-d903-4885-9bc9-87450433db39/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "RoundSmoothYakNinjaGrumpy-Wtrk3fdBgrkpkJPq",
-      "creator_name": "まのり"
     },
     {
       "id": "ClearPhilanthropicDragonDansGame-TsZN92lB-LW7WuSU",
@@ -4181,17 +4126,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b132ffe4-ea5e-413b-9c62-bcadaba2d2ec/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "FaithfulInnocentPlumageYouWHY-uaRzPbZMXxkQW2_I",
       "creator_name": "お気楽品行方正おじさん"
-    },
-    {
-      "id": "CallousSlipperyRavenWow-9j3ziFZur8v-4Lqj",
-      "title": "顔なめくじ",
-      "game_name": "Dead by Daylight",
-      "view_count": 17,
-      "created_at": "2025-12-02T11:37:34Z",
-      "duration": "0:51",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f3faeb50-e1a9-4921-9c7c-e110001380a1/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "CallousSlipperyRavenWow-9j3ziFZur8v-4Lqj",
-      "creator_name": "アスカタン"
     },
     {
       "id": "ProudTriumphantMangetoutBrainSlug-R37Z9orDfSRknm0t",
@@ -4447,6 +4381,17 @@
       "creator_name": "ピーカラ"
     },
     {
+      "id": "SuaveCalmLyrebirdBloodTrail-LcqLkmDjDXtiBI61",
+      "title": "野良モンスターハンターワイルズ",
+      "game_name": "Escape from Tarkov",
+      "view_count": 7,
+      "created_at": "2026-01-01T13:10:54Z",
+      "duration": "0:45",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6435ba89-0eae-4ceb-b84f-51965fe99cfe/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "SuaveCalmLyrebirdBloodTrail-LcqLkmDjDXtiBI61",
+      "creator_name": "ebisun777"
+    },
+    {
       "id": "TriangularSpinelessKoalaSuperVinlin-F8ymT70imzOj3huV",
       "title": "またそっちに",
       "game_name": "Escape from Tarkov",
@@ -4656,6 +4601,17 @@
       "creator_name": "まのり"
     },
     {
+      "id": "FaithfulGenerousAsparagusMingLee-HAI9PXIK44Q0ucYS",
+      "title": "どこから見えるか教えてくれるぽぽちゃん",
+      "game_name": "Escape from Tarkov",
+      "view_count": 4,
+      "created_at": "2026-01-01T07:57:01Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6d2730af-5135-4752-9749-89fe3e320e6b/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "FaithfulGenerousAsparagusMingLee-HAI9PXIK44Q0ucYS",
+      "creator_name": "ピーカラ"
+    },
+    {
       "id": "NaiveLaconicGerbilKeyboardCat-c6kCTDo8LsIHAqBy",
       "title": "配信上手だよねー",
       "game_name": "Escape from Tarkov",
@@ -4766,17 +4722,6 @@
       "creator_name": "ebisun777"
     },
     {
-      "id": "OptimisticFrigidLeopardWOOP-6nUuD4p-TUDJ7jHm",
-      "title": "きゅん♡",
-      "game_name": "Japan Stigmatized Property",
-      "view_count": 3,
-      "created_at": "2025-12-22T15:23:03Z",
-      "duration": "0:13",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b21a80cb-1198-4552-acea-27aa547d0ac0/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "OptimisticFrigidLeopardWOOP-6nUuD4p-TUDJ7jHm",
-      "creator_name": "たっ"
-    },
-    {
       "id": "ResoluteDarkGoatSaltBae-y6QMnUIfekYX7Kx-",
       "title": "なんちゅうタイミング",
       "game_name": "Dead by Daylight",
@@ -4799,6 +4744,17 @@
       "creator_name": "amatsuki_ama"
     },
     {
+      "id": "OptimisticFrigidLeopardWOOP-6nUuD4p-TUDJ7jHm",
+      "title": "きゅん♡",
+      "game_name": "Japan Stigmatized Property",
+      "view_count": 3,
+      "created_at": "2025-12-22T15:23:03Z",
+      "duration": "0:13",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b21a80cb-1198-4552-acea-27aa547d0ac0/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "OptimisticFrigidLeopardWOOP-6nUuD4p-TUDJ7jHm",
+      "creator_name": "たっ"
+    },
+    {
       "id": "ColdbloodedShortAniseTBTacoRight-7VHMSXI6nByqBSlx",
       "title": "俺が決めるんだもんが、決められる！！",
       "game_name": "Escape from Tarkov",
@@ -4810,17 +4766,6 @@
       "creator_name": "さえきっち"
     },
     {
-      "id": "CallousPrettiestCakeHumbleLife-i8ybT2bbC26iZkbe",
-      "title": "本音",
-      "game_name": "Escape from Tarkov",
-      "view_count": 3,
-      "created_at": "2025-12-30T22:02:10Z",
-      "duration": "0:09",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4f4a9f43-e506-4eba-a519-d3f73ca120cc/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "CallousPrettiestCakeHumbleLife-i8ybT2bbC26iZkbe",
-      "creator_name": "たけうっちゃん"
-    },
-    {
       "id": "EvilCheerfulPresidentKappa-Hw2kZeK82AIePazv",
       "title": "増え続けるスクワット…",
       "game_name": "Japan Stigmatized Property",
@@ -4830,6 +4775,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f5a76d00-6d6c-47d9-9730-d3175ee53c34/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "EvilCheerfulPresidentKappa-Hw2kZeK82AIePazv",
       "creator_name": "p0nk0xx"
+    },
+    {
+      "id": "CallousPrettiestCakeHumbleLife-i8ybT2bbC26iZkbe",
+      "title": "本音",
+      "game_name": "Escape from Tarkov",
+      "view_count": 3,
+      "created_at": "2025-12-30T22:02:10Z",
+      "duration": "0:09",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4f4a9f43-e506-4eba-a519-d3f73ca120cc/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "CallousPrettiestCakeHumbleLife-i8ybT2bbC26iZkbe",
+      "creator_name": "たけうっちゃん"
     },
     {
       "id": "EvilHotAubergineBibleThump-TztUINJEQwVZM6nc",
@@ -4909,6 +4865,17 @@
       "creator_name": "なこそん"
     },
     {
+      "id": "VictoriousPatientToothCorgiDerp-BVlP26HTbyr73v5M",
+      "title": "クリアリングが甘すぎてハスハスハスハス",
+      "game_name": "Escape from Tarkov",
+      "view_count": 2,
+      "created_at": "2026-01-01T11:58:29Z",
+      "duration": "0:27",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7df932f8-cff4-41dd-a77d-18d8ac970eaf/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "VictoriousPatientToothCorgiDerp-BVlP26HTbyr73v5M",
+      "creator_name": "ぴろきちーツイッチ"
+    },
+    {
       "id": "UgliestInventiveTeaSoonerLater-0V4ux6mtS76b-QNm",
       "title": "かむばーっく",
       "game_name": "Escape from Tarkov",
@@ -4942,6 +4909,17 @@
       "creator_name": "へそ天ゆったん"
     },
     {
+      "id": "EagerCarefulPassionfruitTBTacoLeft-krTUIkxvm_oRWNV0",
+      "title": "落ち着くために心拍をマッサージするぬーさん",
+      "game_name": "Escape from Tarkov",
+      "view_count": 2,
+      "created_at": "2026-01-01T11:26:41Z",
+      "duration": "0:39",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a8fe12e2-b79e-4cd9-9f8b-1be79c3cfc1d/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "EagerCarefulPassionfruitTBTacoLeft-krTUIkxvm_oRWNV0",
+      "creator_name": "ぴろきちーツイッチ"
+    },
+    {
       "id": "ShakingAdventurousCodUncleNox-nNvKF2TFmpp_OyFb",
       "title": "有刺鉄線に挟まって座ってるローグ",
       "game_name": "Escape from Tarkov",
@@ -4962,6 +4940,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/551b95a8-5673-4759-8cbf-5e9a479e9b97/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "SpoopyAttractiveHamsterLeeroyJenkins-ki6gOkRC1wezbxoc",
       "creator_name": "ebisun777"
+    },
+    {
+      "id": "RoundSmoothYakNinjaGrumpy-Wtrk3fdBgrkpkJPq",
+      "title": "命の回復、地面に消える",
+      "game_name": "Escape from Tarkov",
+      "view_count": 2,
+      "created_at": "2026-01-01T13:18:36Z",
+      "duration": "0:12",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0a3aacb8-d903-4885-9bc9-87450433db39/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "RoundSmoothYakNinjaGrumpy-Wtrk3fdBgrkpkJPq",
+      "creator_name": "まのり"
     },
     {
       "id": "TenderPoisedPresidentFreakinStinkin-o0VwLbgkaKQiWbke",
@@ -5050,6 +5039,28 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f621a294-3f15-4898-a149-27abdbefda5f/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "CovertEvilJackalDendiFace-RFjB_5b_uSTLVPCy",
       "creator_name": "さえきっち"
+    },
+    {
+      "id": "ThirstyLightGoblinSmoocherZ-rNXUEge-8XQIKg2D",
+      "title": "兄妹二人で真顔せーのっ　ぱしゅっ",
+      "game_name": "Escape from Tarkov",
+      "view_count": 1,
+      "created_at": "2025-12-28T07:45:18Z",
+      "duration": "0:44",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0f8765db-ab82-4da6-97d7-99b27b2ad5dd/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "ThirstyLightGoblinSmoocherZ-rNXUEge-8XQIKg2D",
+      "creator_name": "ピーカラ"
+    },
+    {
+      "id": "LitigiousCorrectCheddar4Head-9WWIUUc5XevuX7nj",
+      "title": "はや",
+      "game_name": "Escape from Tarkov",
+      "view_count": 1,
+      "created_at": "2025-12-17T16:10:09Z",
+      "duration": "0:22",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9a799280-150e-4584-a203-3baf67ee72d0/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "LitigiousCorrectCheddar4Head-9WWIUUc5XevuX7nj",
+      "creator_name": "へそ天ゆったん"
     },
     {
       "id": "MotionlessRenownedJellyfishPRChase-5ElyXeUxZzR7kYyU",
@@ -5173,15 +5184,15 @@
       "creator_name": "ななみ殿大好き"
     },
     {
-      "id": "StupidYummyWebDoubleRainbow-D_5Yw5dVJdYHlQoV",
-      "title": "ワンチャン",
+      "id": "CallousSlipperyRavenWow-9j3ziFZur8v-4Lqj",
+      "title": "顔なめくじ",
       "game_name": "Dead by Daylight",
       "view_count": 17,
-      "created_at": "2025-11-02T14:55:11Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6f6f3470-23c3-4de8-b8b4-a4ce947071d5/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "StupidYummyWebDoubleRainbow-D_5Yw5dVJdYHlQoV",
-      "creator_name": "ebisun777"
+      "created_at": "2025-12-02T11:37:34Z",
+      "duration": "0:51",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f3faeb50-e1a9-4921-9c7c-e110001380a1/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "CallousSlipperyRavenWow-9j3ziFZur8v-4Lqj",
+      "creator_name": "アスカタン"
     },
     {
       "id": "EmpathicBlindingShieldTakeNRG-j3QYXjLJx7mCwGr1",
@@ -5316,17 +5327,6 @@
       "creator_name": "amatsuki_ama"
     },
     {
-      "id": "SpineyGrossDugongItsBoshyTime-ofdOmq6npoOHYqU0",
-      "title": "なんでだろう",
-      "game_name": "Dead by Daylight",
-      "view_count": 7,
-      "created_at": "2025-11-02T14:06:18Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8810f606-6584-47bb-89a2-985258f56310/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "SpineyGrossDugongItsBoshyTime-ofdOmq6npoOHYqU0",
-      "creator_name": "ebisun777"
-    },
-    {
       "id": "VenomousPeacefulCodFeelsBadMan-6AYXC07l8pAawKJH",
       "title": "遅れてやってきた覚醒",
       "game_name": "Dead by Daylight",
@@ -5338,15 +5338,15 @@
       "creator_name": "ちゃみする"
     },
     {
-      "id": "DullTalentedStinkbugCopyThis-6rEl8KQ1McpshECX",
-      "title": "Tier3サブスク演出",
-      "game_name": "Dead by Daylight",
+      "id": "TolerantSpicyDiscRedCoat-kTlRmjhWyzJvKEsm",
+      "title": "ひっくり返るにゅー",
+      "game_name": "Escape from Tarkov",
       "view_count": 7,
-      "created_at": "2025-11-02T11:55:56Z",
-      "duration": "0:23",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/06829852-7b41-46c9-91de-2250db2927bc/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "DullTalentedStinkbugCopyThis-6rEl8KQ1McpshECX",
-      "creator_name": "Hope_Yeager"
+      "created_at": "2025-11-17T16:30:33Z",
+      "duration": "0:30",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/132c95bc-3481-4508-97ee-f10c7fdbd12b/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "TolerantSpicyDiscRedCoat-kTlRmjhWyzJvKEsm",
+      "creator_name": "p0nk0xx"
     },
     {
       "id": "HonestTardySalmonHoneyBadger-aUnfGB0GS9sPJL2g",
@@ -5357,17 +5357,6 @@
       "duration": "1:00",
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cfb91aea-10f3-40ce-aa96-9be5999d416b/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "HonestTardySalmonHoneyBadger-aUnfGB0GS9sPJL2g",
-      "creator_name": "p0nk0xx"
-    },
-    {
-      "id": "TolerantSpicyDiscRedCoat-kTlRmjhWyzJvKEsm",
-      "title": "ひっくり返るにゅー",
-      "game_name": "Escape from Tarkov",
-      "view_count": 7,
-      "created_at": "2025-11-17T16:30:33Z",
-      "duration": "0:30",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/132c95bc-3481-4508-97ee-f10c7fdbd12b/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "TolerantSpicyDiscRedCoat-kTlRmjhWyzJvKEsm",
       "creator_name": "p0nk0xx"
     },
     {
@@ -5690,17 +5679,6 @@
       "creator_name": "naochiii246"
     },
     {
-      "id": "InexpensiveCorrectMangoPJSalt-WEPSRh2nstiQhzqn",
-      "title": "チャネポの嵐今宵もはじまる...！！！！！",
-      "game_name": "Dead by Daylight",
-      "view_count": 21,
-      "created_at": "2025-10-03T13:26:34Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/facc4617-51f9-487a-b968-7f1a6c6630ed/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "InexpensiveCorrectMangoPJSalt-WEPSRh2nstiQhzqn",
-      "creator_name": "p0nk0xx"
-    },
-    {
       "id": "DarlingDeadMagpieTwitchRPG-4SmBYXL34tOv7S6t",
       "title": "ワイルズ潰し",
       "game_name": "KILLER INN",
@@ -5710,6 +5688,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/739f7636-e248-4b39-832d-a35bce15ddf5/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "DarlingDeadMagpieTwitchRPG-4SmBYXL34tOv7S6t",
       "creator_name": "へそ天ゆったん"
+    },
+    {
+      "id": "StupidYummyWebDoubleRainbow-D_5Yw5dVJdYHlQoV",
+      "title": "ワンチャン",
+      "game_name": "Dead by Daylight",
+      "view_count": 17,
+      "created_at": "2025-11-02T14:55:11Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6f6f3470-23c3-4de8-b8b4-a4ce947071d5/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "StupidYummyWebDoubleRainbow-D_5Yw5dVJdYHlQoV",
+      "creator_name": "ebisun777"
     },
     {
       "id": "HomelyAmericanBibimbapPJSalt-ezYd3oHmQFqgzf5d",
@@ -5767,6 +5756,17 @@
       "creator_name": "さんでーさいれんす"
     },
     {
+      "id": "SpineyGrossDugongItsBoshyTime-ofdOmq6npoOHYqU0",
+      "title": "なんでだろう",
+      "game_name": "Dead by Daylight",
+      "view_count": 7,
+      "created_at": "2025-11-02T14:06:18Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8810f606-6584-47bb-89a2-985258f56310/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "SpineyGrossDugongItsBoshyTime-ofdOmq6npoOHYqU0",
+      "creator_name": "ebisun777"
+    },
+    {
       "id": "HelplessBloodyLobsterFunRun-_XO_wz2TcVdVlee8",
       "title": "素材用",
       "game_name": "Dead by Daylight",
@@ -5787,6 +5787,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2836e63f-fb28-46a4-b036-cfbc388a90c2/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "ScrumptiousWonderfulDaikonPeoplesChamp-lZjKuWkFlK34cQk1",
       "creator_name": "お気楽品行方正おじさん"
+    },
+    {
+      "id": "DullTalentedStinkbugCopyThis-6rEl8KQ1McpshECX",
+      "title": "Tier3サブスク演出",
+      "game_name": "Dead by Daylight",
+      "view_count": 7,
+      "created_at": "2025-11-02T11:55:56Z",
+      "duration": "0:23",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/06829852-7b41-46c9-91de-2250db2927bc/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "DullTalentedStinkbugCopyThis-6rEl8KQ1McpshECX",
+      "creator_name": "Hope_Yeager"
     },
     {
       "id": "AntsyBadBadgerBigBrother-ogSmyyGKholpeLwh",
@@ -5877,17 +5888,6 @@
       "creator_name": "ピーカラ"
     },
     {
-      "id": "EagerInexpensiveGaurPartyTime-SERW3bnZDrtKIr4k",
-      "title": "ないすとぅぅみいちゅうううう！",
-      "game_name": "KILLER INN",
-      "view_count": 3,
-      "created_at": "2025-10-12T10:18:28Z",
-      "duration": "0:34",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9291be5b-c247-47d2-a44c-9c131543085c/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "EagerInexpensiveGaurPartyTime-SERW3bnZDrtKIr4k",
-      "creator_name": "へそ天ゆったん"
-    },
-    {
       "id": "CoweringRealSharkStrawBeary-znrpTZSud_rfjkNS",
       "title": "ちょ待てよ",
       "game_name": "KILLER INN",
@@ -5908,6 +5908,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3d8ed5cc-aeac-417b-9223-04512ba5ade9/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "RenownedCleanGarlicVoteNay-gQbeYe67QhSB5ZZw",
       "creator_name": "たかぜみ"
+    },
+    {
+      "id": "EagerInexpensiveGaurPartyTime-SERW3bnZDrtKIr4k",
+      "title": "ないすとぅぅみいちゅうううう！",
+      "game_name": "KILLER INN",
+      "view_count": 3,
+      "created_at": "2025-10-12T10:18:28Z",
+      "duration": "0:34",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9291be5b-c247-47d2-a44c-9c131543085c/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "EagerInexpensiveGaurPartyTime-SERW3bnZDrtKIr4k",
+      "creator_name": "へそ天ゆったん"
     },
     {
       "id": "SmilingSleepyWallabyGOWSkull-PLoddmcbdrn2KwN4",
@@ -6127,6 +6138,17 @@
       "duration": "0:38",
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/187612bd-61cb-43b4-858a-676a1b3e1fdc/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "KindHedonisticWhalePipeHype-fpEAiAQWZTs12SVQ",
+      "creator_name": "p0nk0xx"
+    },
+    {
+      "id": "InexpensiveCorrectMangoPJSalt-WEPSRh2nstiQhzqn",
+      "title": "チャネポの嵐今宵もはじまる...！！！！！",
+      "game_name": "Dead by Daylight",
+      "view_count": 21,
+      "created_at": "2025-10-03T13:26:34Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/facc4617-51f9-487a-b968-7f1a6c6630ed/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "InexpensiveCorrectMangoPJSalt-WEPSRh2nstiQhzqn",
       "creator_name": "p0nk0xx"
     },
     {
@@ -7098,17 +7120,6 @@
       "creator_name": "ちゃみする"
     },
     {
-      "id": "CarefulCrunchyAxeTinyFace-J_ppj4oteaOQtsqz",
-      "title": "時を止めたにゅーさん",
-      "game_name": "Rust",
-      "view_count": 42,
-      "created_at": "2025-07-05T13:53:08Z",
-      "duration": "0:30",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1614515f-3a1a-4711-aa35-a755734a989e/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "CarefulCrunchyAxeTinyFace-J_ppj4oteaOQtsqz",
-      "creator_name": "naochiii246"
-    },
-    {
       "id": "HyperRockyPotatoDansGame-pDlLtGMCd8EJlkLM",
       "title": "なにやってんの？レイド中にヘリ即落下",
       "game_name": "Rust",
@@ -7393,6 +7404,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a35c644a-e931-4b8d-a632-7e40570f11ca/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "DistinctLivelyPuddingPoooound-_dJEsgaJEM-m-9Oq",
       "creator_name": "p0nk0xx"
+    },
+    {
+      "id": "CarefulCrunchyAxeTinyFace-J_ppj4oteaOQtsqz",
+      "title": "時を止めたにゅーさん",
+      "game_name": "Rust",
+      "view_count": 42,
+      "created_at": "2025-07-05T13:53:08Z",
+      "duration": "0:30",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1614515f-3a1a-4711-aa35-a755734a989e/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "CarefulCrunchyAxeTinyFace-J_ppj4oteaOQtsqz",
+      "creator_name": "naochiii246"
     },
     {
       "id": "SillyObservantNewtChocolateRain-e3FEac-uwPZrbnWL",
@@ -7824,17 +7846,6 @@
       "creator_name": "虹空"
     },
     {
-      "id": "NeighborlySteamyOkapiVoteNay-7ZTIhf7tigWIXQyJ",
-      "title": "洗礼",
-      "game_name": "Escape from Tarkov",
-      "view_count": 22,
-      "created_at": "2025-04-06T14:42:23Z",
-      "duration": "0:34",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6c8b9b35-b91f-4971-977e-ebcfeb2bbf70/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "NeighborlySteamyOkapiVoteNay-7ZTIhf7tigWIXQyJ",
-      "creator_name": "youhei93"
-    },
-    {
       "id": "SuccessfulConsiderateOcelotHumbleLife-41ewQRYJ1ZkwWd-t",
       "title": "【バブ江リスペクト】パンストの祖による大ちょけコントローラー",
       "game_name": "Escape from Tarkov",
@@ -7866,17 +7877,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ec466256-7e18-4fd3-b475-bfe639e07f49/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "ModernTubularPterodactylSwiftRage-ZXhar4TnaY55Rqhn",
       "creator_name": "ebisun777"
-    },
-    {
-      "id": "CuteDiligentGorillaMVGame-2t1eFbZCZJYcvyKF",
-      "title": "どこから？？",
-      "game_name": "Escape from Tarkov",
-      "view_count": 11,
-      "created_at": "2025-04-06T15:01:59Z",
-      "duration": "0:22",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d49fc145-d029-48db-a3e1-0e7c2cbde98d/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "CuteDiligentGorillaMVGame-2t1eFbZCZJYcvyKF",
-      "creator_name": "ぴろきちーツイッチ"
     },
     {
       "id": "CovertFantasticCougarBrokeBack-X42wTIRZuzukFhwX",
@@ -7997,17 +7997,6 @@
       "duration": "0:56",
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/18c967e9-29ae-4c86-afc5-6caa11eab72f/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "TacitAgreeablePepperoniWTRuck-SV0QhQP7ZygIqqIL",
-      "creator_name": "ebisun777"
-    },
-    {
-      "id": "LuckyNiceChinchillaVoteYea-mEwCzXi1ohbe3L5N",
-      "title": "こんなときにマガジンチェック",
-      "game_name": "Escape from Tarkov",
-      "view_count": 3,
-      "created_at": "2025-04-06T13:29:23Z",
-      "duration": "0:39",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8e466da2-9769-4a63-b484-0eb432169b75/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "LuckyNiceChinchillaVoteYea-mEwCzXi1ohbe3L5N",
       "creator_name": "ebisun777"
     },
     {
@@ -8132,6 +8121,17 @@
       "creator_name": "tijyon"
     },
     {
+      "id": "NeighborlySteamyOkapiVoteNay-7ZTIhf7tigWIXQyJ",
+      "title": "洗礼",
+      "game_name": "Escape from Tarkov",
+      "view_count": 22,
+      "created_at": "2025-04-06T14:42:23Z",
+      "duration": "0:34",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6c8b9b35-b91f-4971-977e-ebcfeb2bbf70/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "NeighborlySteamyOkapiVoteNay-7ZTIhf7tigWIXQyJ",
+      "creator_name": "youhei93"
+    },
+    {
       "id": "NeighborlyThoughtfulJackalBleedPurple-ROxBLa6uhIqFcbC0",
       "title": "しにます！しにまーーす！",
       "game_name": "Escape from Tarkov",
@@ -8165,6 +8165,17 @@
       "creator_name": "虹空"
     },
     {
+      "id": "CuteDiligentGorillaMVGame-2t1eFbZCZJYcvyKF",
+      "title": "どこから？？",
+      "game_name": "Escape from Tarkov",
+      "view_count": 11,
+      "created_at": "2025-04-06T15:01:59Z",
+      "duration": "0:22",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d49fc145-d029-48db-a3e1-0e7c2cbde98d/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "CuteDiligentGorillaMVGame-2t1eFbZCZJYcvyKF",
+      "creator_name": "ぴろきちーツイッチ"
+    },
+    {
       "id": "BelovedRepleteBatLitty-mjigLryB9bsYA144",
       "title": "4分の1を外した男",
       "game_name": "Escape from Tarkov",
@@ -8196,6 +8207,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cb1d9fb5-b48c-4e3b-a014-24b918c5fbdc/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "GracefulDeadGazellePeoplesChamp-IqrwPYTSzgjnsiPz",
       "creator_name": "ピーカラ"
+    },
+    {
+      "id": "LuckyNiceChinchillaVoteYea-mEwCzXi1ohbe3L5N",
+      "title": "こんなときにマガジンチェック",
+      "game_name": "Escape from Tarkov",
+      "view_count": 3,
+      "created_at": "2025-04-06T13:29:23Z",
+      "duration": "0:39",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8e466da2-9769-4a63-b484-0eb432169b75/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "LuckyNiceChinchillaVoteYea-mEwCzXi1ohbe3L5N",
+      "creator_name": "ebisun777"
     },
     {
       "id": "HonorableCoweringMartenCeilingCat-fo1t7XmUGV5ta-Vs",
@@ -8275,28 +8297,6 @@
       "creator_name": "noro_n0face"
     },
     {
-      "id": "BrightEntertainingFiddleheadsPeanutButterJellyTime-lcSChmRGIZRsAhmy",
-      "title": "結構、頑張ったそうです",
-      "game_name": "Escape from Tarkov",
-      "view_count": 5,
-      "created_at": "2025-01-06T13:03:29Z",
-      "duration": "0:21",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/96be2579-f26b-4dd5-9a9d-dcfae3fcfccc/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "BrightEntertainingFiddleheadsPeanutButterJellyTime-lcSChmRGIZRsAhmy",
-      "creator_name": "ebisun777"
-    },
-    {
-      "id": "StormyOddMagpieGivePLZ-GIsnq5FiO0DEpGmc",
-      "title": "ソーセージ",
-      "game_name": "Escape from Tarkov",
-      "view_count": 3,
-      "created_at": "2025-01-06T14:45:12Z",
-      "duration": "0:22",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0ba4c39e-3239-4c6c-baab-ff3705c26c1c/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "StormyOddMagpieGivePLZ-GIsnq5FiO0DEpGmc",
-      "creator_name": "ebisun777"
-    },
-    {
       "id": "DifficultTardyCrowPunchTrees-90cIcULR5xB8Iv8i",
       "title": "トイレ離席中の心拍数が疑惑過ぎる",
       "game_name": "Escape from Tarkov",
@@ -8319,6 +8319,17 @@
       "creator_name": "ごとてん"
     },
     {
+      "id": "BrightEntertainingFiddleheadsPeanutButterJellyTime-lcSChmRGIZRsAhmy",
+      "title": "結構、頑張ったそうです",
+      "game_name": "Escape from Tarkov",
+      "view_count": 5,
+      "created_at": "2025-01-06T13:03:29Z",
+      "duration": "0:21",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/96be2579-f26b-4dd5-9a9d-dcfae3fcfccc/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "BrightEntertainingFiddleheadsPeanutButterJellyTime-lcSChmRGIZRsAhmy",
+      "creator_name": "ebisun777"
+    },
+    {
       "id": "HelpfulSuspiciousGaurBrainSlug-YQxxKOd0FCytPNJC",
       "title": "パンスト忍者🥷",
       "game_name": "Apex Legends",
@@ -8339,6 +8350,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/aaee23c8-efc1-4d13-9b21-52b2686bc87e/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "ImpossibleAbnegateMilkFailFish-Rv3P6XCaoUFEGUMV",
       "creator_name": "ピーカラ"
+    },
+    {
+      "id": "StormyOddMagpieGivePLZ-GIsnq5FiO0DEpGmc",
+      "title": "ソーセージ",
+      "game_name": "Escape from Tarkov",
+      "view_count": 3,
+      "created_at": "2025-01-06T14:45:12Z",
+      "duration": "0:22",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0ba4c39e-3239-4c6c-baab-ff3705c26c1c/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "StormyOddMagpieGivePLZ-GIsnq5FiO0DEpGmc",
+      "creator_name": "ebisun777"
     },
     {
       "id": "HeadstrongGentleAsteriskPeteZarollTie-gZzbd6GvfORbqLGX",
@@ -8473,17 +8495,6 @@
       "creator_name": "お気楽品行方正おじさん"
     },
     {
-      "id": "ObliviousMildSparrowDeIlluminati-HKcGy8LtN-IjDgR2",
-      "title": "油断するな！！",
-      "game_name": "Escape from Tarkov",
-      "view_count": 13,
-      "created_at": "2024-11-07T10:41:49Z",
-      "duration": "0:56",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d9f3863e-ce7a-4374-bdc6-4cfe5020cf1b/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "ObliviousMildSparrowDeIlluminati-HKcGy8LtN-IjDgR2",
-      "creator_name": "ebisun777"
-    },
-    {
       "id": "OriginalSincereCakeDancingBanana-7IoebnMt3-auLqet",
       "title": "自分から誘っておいて",
       "game_name": "Escape from Tarkov",
@@ -8559,17 +8570,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/43a1cbc1-2539-425a-9698-196f554069dc/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "SweetQuaintOpossumOMGScoots-taUlM8hjBzOjCyRu",
       "creator_name": "clara_12s"
-    },
-    {
-      "id": "GeniusTiredSushiNotLikeThis-XLOSXYQjnzQHSCgG",
-      "title": "あぶなーい",
-      "game_name": "Escape from Tarkov",
-      "view_count": 7,
-      "created_at": "2024-11-07T11:39:09Z",
-      "duration": "1:00",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/05a85a14-8ce8-47c5-bbd6-a88948668ebc/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "GeniusTiredSushiNotLikeThis-XLOSXYQjnzQHSCgG",
-      "creator_name": "ebisun777"
     },
     {
       "id": "GiantArbitraryPastaTwitchRaid-CDOenoFqm7pEf1av",
@@ -8704,6 +8704,17 @@
       "creator_name": "ごとてん"
     },
     {
+      "id": "ObliviousMildSparrowDeIlluminati-HKcGy8LtN-IjDgR2",
+      "title": "油断するな！！",
+      "game_name": "Escape from Tarkov",
+      "view_count": 13,
+      "created_at": "2024-11-07T10:41:49Z",
+      "duration": "0:56",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d9f3863e-ce7a-4374-bdc6-4cfe5020cf1b/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "ObliviousMildSparrowDeIlluminati-HKcGy8LtN-IjDgR2",
+      "creator_name": "ebisun777"
+    },
+    {
       "id": "AmorphousBillowingGaurLeeroyJenkins-E8Xol09V3pMAM_Qs",
       "title": "開始早々ホラーゲームをぬーさん",
       "game_name": "Escape from Tarkov",
@@ -8713,6 +8724,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c914faff-bad7-4843-a365-8b668b99a80d/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "AmorphousBillowingGaurLeeroyJenkins-E8Xol09V3pMAM_Qs",
       "creator_name": "ぴろきちーツイッチ"
+    },
+    {
+      "id": "GeniusTiredSushiNotLikeThis-XLOSXYQjnzQHSCgG",
+      "title": "あぶなーい",
+      "game_name": "Escape from Tarkov",
+      "view_count": 7,
+      "created_at": "2024-11-07T11:39:09Z",
+      "duration": "1:00",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/05a85a14-8ce8-47c5-bbd6-a88948668ebc/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "GeniusTiredSushiNotLikeThis-XLOSXYQjnzQHSCgG",
+      "creator_name": "ebisun777"
     },
     {
       "id": "StupidOptimisticKoalaKappa-PLTZYPOboDTXVZNP",
@@ -9331,28 +9353,6 @@
       "creator_name": "youhei93"
     },
     {
-      "id": "SilkySlipperyElkRitzMitz-toH3TdTMoZndkA16",
-      "title": "おっけおっけおっけえ！",
-      "game_name": "VALORANT",
-      "view_count": 11,
-      "created_at": "2024-07-10T13:32:31Z",
-      "duration": "0:12",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/15536347-7bf6-4a30-85e5-4b63d2999b1a/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "SilkySlipperyElkRitzMitz-toH3TdTMoZndkA16",
-      "creator_name": "お気楽品行方正おじさん"
-    },
-    {
-      "id": "PopularConsiderateClipzUWot-wTzLE4QzbwxtZDWl",
-      "title": "３億年ぶりのヴァロランティカスタム",
-      "game_name": "VALORANT",
-      "view_count": 10,
-      "created_at": "2024-07-10T12:48:51Z",
-      "duration": "0:28",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e9325fc1-3eca-4a78-9470-581460c8ced3/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "PopularConsiderateClipzUWot-wTzLE4QzbwxtZDWl",
-      "creator_name": "rustn38"
-    },
-    {
       "id": "SuccessfulGoldenWombatTTours-s50zdW8pJmfstNsc",
       "title": "ヌルっと出てくるnew",
       "game_name": "ELDEN RING",
@@ -9496,15 +9496,26 @@
       "creator_name": "happisan"
     },
     {
-      "id": "ObliviousAthleticAdminSSSsss-hdbegoXS_B-03iSe",
-      "title": "ピンポイントすぎ！",
-      "game_name": "Escape from Tarkov",
-      "view_count": 9,
-      "created_at": "2024-06-10T13:08:20Z",
-      "duration": "0:31",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b552cc48-4cbc-4c03-8561-aae3ccae7843/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "ObliviousAthleticAdminSSSsss-hdbegoXS_B-03iSe",
-      "creator_name": "ebisun777"
+      "id": "SilkySlipperyElkRitzMitz-toH3TdTMoZndkA16",
+      "title": "おっけおっけおっけえ！",
+      "game_name": "VALORANT",
+      "view_count": 11,
+      "created_at": "2024-07-10T13:32:31Z",
+      "duration": "0:12",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/15536347-7bf6-4a30-85e5-4b63d2999b1a/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "SilkySlipperyElkRitzMitz-toH3TdTMoZndkA16",
+      "creator_name": "お気楽品行方正おじさん"
+    },
+    {
+      "id": "PopularConsiderateClipzUWot-wTzLE4QzbwxtZDWl",
+      "title": "３億年ぶりのヴァロランティカスタム",
+      "game_name": "VALORANT",
+      "view_count": 10,
+      "created_at": "2024-07-10T12:48:51Z",
+      "duration": "0:28",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e9325fc1-3eca-4a78-9470-581460c8ced3/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "PopularConsiderateClipzUWot-wTzLE4QzbwxtZDWl",
+      "creator_name": "rustn38"
     },
     {
       "id": "MoralSnappyShieldBCWarrior-QTyzP5n9A_8I_Nui",
@@ -9628,17 +9639,6 @@
       "creator_name": "noro_n0face"
     },
     {
-      "id": "UgliestSpeedyFriseeYouDontSay-09P_4Ls2P2kaYeKt",
-      "title": "『緊急タスク』Ref開放を阻止しろ！！スナイプOK",
-      "game_name": "Escape from Tarkov",
-      "view_count": 3,
-      "created_at": "2024-06-10T14:06:55Z",
-      "duration": "0:26",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a8babe65-7025-46b7-b758-333456b16ef8/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "UgliestSpeedyFriseeYouDontSay-09P_4Ls2P2kaYeKt",
-      "creator_name": "お気楽品行方正おじさん"
-    },
-    {
       "id": "GiantCharmingFennelYouWHY-_L60PIntjZQVzcdg",
       "title": "#６ シュターマンと僕しかいない生活",
       "game_name": "Escape from Tarkov",
@@ -9669,17 +9669,6 @@
       "duration": "0:26",
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5728a3cd-f409-4735-b953-27473b04b38f/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "PlausibleCulturedKaleMrDestructoid-_JRZoSTQadm9ncFp",
-      "creator_name": "ebisun777"
-    },
-    {
-      "id": "BrightHonestAsteriskMVGame-YfU7x_5yCrm1KUh9",
-      "title": "みなさん前提",
-      "game_name": "Escape from Tarkov",
-      "view_count": 1,
-      "created_at": "2024-06-10T12:12:36Z",
-      "duration": "0:27",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/94e182fb-e048-41d9-b0a6-154d205a8dd3/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "BrightHonestAsteriskMVGame-YfU7x_5yCrm1KUh9",
       "creator_name": "ebisun777"
     },
     {
@@ -9769,6 +9758,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/464fe32d-4a32-4464-a605-88661db346d0/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "IntelligentVainOkapiKeyboardCat-MRv_IUFSwmhxwVB6",
       "creator_name": "のばしゃ"
+    },
+    {
+      "id": "ObliviousAthleticAdminSSSsss-hdbegoXS_B-03iSe",
+      "title": "ピンポイントすぎ！",
+      "game_name": "Escape from Tarkov",
+      "view_count": 9,
+      "created_at": "2024-06-10T13:08:20Z",
+      "duration": "0:31",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b552cc48-4cbc-4c03-8561-aae3ccae7843/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "ObliviousAthleticAdminSSSsss-hdbegoXS_B-03iSe",
+      "creator_name": "ebisun777"
     },
     {
       "id": "ClumsyWealthyBaconDxCat-nSUNyUOemmkPMB_v",
@@ -9903,6 +9903,17 @@
       "creator_name": "虹空"
     },
     {
+      "id": "UgliestSpeedyFriseeYouDontSay-09P_4Ls2P2kaYeKt",
+      "title": "『緊急タスク』Ref開放を阻止しろ！！スナイプOK",
+      "game_name": "Escape from Tarkov",
+      "view_count": 3,
+      "created_at": "2024-06-10T14:06:55Z",
+      "duration": "0:26",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a8babe65-7025-46b7-b758-333456b16ef8/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "UgliestSpeedyFriseeYouDontSay-09P_4Ls2P2kaYeKt",
+      "creator_name": "お気楽品行方正おじさん"
+    },
+    {
       "id": "OpenClumsyAlligatorTheRinger-ir3ayW4R0dNVIhkr",
       "title": "( ˘ω˘)ｽﾔｧ 寝落ちの瞬間",
       "game_name": "Escape from Tarkov",
@@ -9945,6 +9956,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c8ecf5d6-0201-4cf1-82ae-35eb920e8543/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "CarelessInventiveWoodcockPhilosoraptor-LtrwOklJZt0POZTb",
       "creator_name": "お気楽品行方正おじさん"
+    },
+    {
+      "id": "BrightHonestAsteriskMVGame-YfU7x_5yCrm1KUh9",
+      "title": "みなさん前提",
+      "game_name": "Escape from Tarkov",
+      "view_count": 1,
+      "created_at": "2024-06-10T12:12:36Z",
+      "duration": "0:27",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/94e182fb-e048-41d9-b0a6-154d205a8dd3/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "BrightHonestAsteriskMVGame-YfU7x_5yCrm1KUh9",
+      "creator_name": "ebisun777"
     },
     {
       "id": "AmazonianPrettiestKumquatPermaSmug-eOOoS6TCrfl2JF2S",
@@ -10871,17 +10893,6 @@
       "creator_name": "ナポチャン"
     },
     {
-      "id": "ObedientMoralSkirretPoooound-5vR_A5YA9vy2sNJP",
-      "title": "シュターマンと私がいる生活",
-      "game_name": "Escape from Tarkov",
-      "view_count": 5,
-      "created_at": "2024-02-11T12:03:59Z",
-      "duration": "0:28",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/66e747c9-8093-482b-900f-f02db190da42/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "ObedientMoralSkirretPoooound-5vR_A5YA9vy2sNJP",
-      "creator_name": "rustn38"
-    },
-    {
       "id": "EnthusiasticTawdryMetalDuDudu-kjrBuv9xqij0pvT_",
       "title": "シュターマンが死ぬか、俺が死ぬか",
       "game_name": "Escape from Tarkov",
@@ -10924,17 +10935,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5d7449e0-10f5-4bb2-9c6a-7196ace26b80/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "AmazonianStylishInternSquadGoals-pSShXRWs5Gcp582D",
       "creator_name": "ピーカラ"
-    },
-    {
-      "id": "FineVainCakeTBTacoLeft-NpnSnIRufXyFqrKw",
-      "title": "シュターマンと私がいる生活",
-      "game_name": "Escape from Tarkov",
-      "view_count": 5,
-      "created_at": "2024-02-11T09:45:34Z",
-      "duration": "0:26",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bfd1af11-e047-401d-b05d-9e3f47d84b9d/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "FineVainCakeTBTacoLeft-NpnSnIRufXyFqrKw",
-      "creator_name": "rustn38"
     },
     {
       "id": "BraveSpineyTardigradeSeemsGood-9ABSog81l7gML7eN",
@@ -11245,6 +11245,17 @@
       "creator_name": "お気楽品行方正おじさん"
     },
     {
+      "id": "ObedientMoralSkirretPoooound-5vR_A5YA9vy2sNJP",
+      "title": "シュターマンと私がいる生活",
+      "game_name": "Escape from Tarkov",
+      "view_count": 5,
+      "created_at": "2024-02-11T12:03:59Z",
+      "duration": "0:28",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/66e747c9-8093-482b-900f-f02db190da42/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "ObedientMoralSkirretPoooound-5vR_A5YA9vy2sNJP",
+      "creator_name": "rustn38"
+    },
+    {
       "id": "SmokyPoisedFlamingoKappaClaus-tV3hspOJyNZ0G8HR",
       "title": "午前3時18分、痛恨の一発",
       "game_name": "Escape from Tarkov",
@@ -11254,6 +11265,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3ec9b5b2-da58-4346-955f-b74e64678fd0/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "SmokyPoisedFlamingoKappaClaus-tV3hspOJyNZ0G8HR",
       "creator_name": "お気楽品行方正おじさん"
+    },
+    {
+      "id": "FineVainCakeTBTacoLeft-NpnSnIRufXyFqrKw",
+      "title": "シュターマンと私がいる生活",
+      "game_name": "Escape from Tarkov",
+      "view_count": 5,
+      "created_at": "2024-02-11T09:45:34Z",
+      "duration": "0:26",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bfd1af11-e047-401d-b05d-9e3f47d84b9d/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "FineVainCakeTBTacoLeft-NpnSnIRufXyFqrKw",
+      "creator_name": "rustn38"
     },
     {
       "id": "SoftAgreeableLemurOSkomodo-GzR88M319eWWNZTi",
@@ -12004,17 +12026,6 @@
       "creator_name": "ピーカラ"
     },
     {
-      "id": "ElegantBumblingYakPogChamp-MBvAj26ho5PZkm9b",
-      "title": "耐久(33時間)成功の勝利の舞",
-      "game_name": "Apex Legends",
-      "view_count": 13,
-      "created_at": "2023-11-19T17:47:39Z",
-      "duration": "0:59",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3e4dcf5d-511b-48c2-a888-dba6ae202c60/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "ElegantBumblingYakPogChamp-MBvAj26ho5PZkm9b",
-      "creator_name": "ごとてん"
-    },
-    {
       "id": "HyperCourteousDragonfruitOhMyDog-w9wCCviNk95ezMm1",
       "title": "無かったことにしてるにゅーさん",
       "game_name": "Apex Legends",
@@ -12024,6 +12035,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d2ec2c7d-389a-4cd3-af04-0ad18a63c75b/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "HyperCourteousDragonfruitOhMyDog-w9wCCviNk95ezMm1",
       "creator_name": "虹空"
+    },
+    {
+      "id": "ElegantBumblingYakPogChamp-MBvAj26ho5PZkm9b",
+      "title": "耐久(33時間)成功の勝利の舞",
+      "game_name": "Apex Legends",
+      "view_count": 13,
+      "created_at": "2023-11-19T17:47:39Z",
+      "duration": "0:59",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3e4dcf5d-511b-48c2-a888-dba6ae202c60/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "ElegantBumblingYakPogChamp-MBvAj26ho5PZkm9b",
+      "creator_name": "ごとてん"
     },
     {
       "id": "CleverSplendidPlumageSpicyBoy-uvD8ZFRu-zvtylrY",
@@ -12070,17 +12092,6 @@
       "creator_name": "えにし5050"
     },
     {
-      "id": "PlumpSpeedyGuanacoSSSsss-EgnYGof9n-EzXpCA",
-      "title": "適当ウィングマン✊🏻",
-      "game_name": "Apex Legends",
-      "view_count": 11,
-      "created_at": "2023-11-18T12:31:51Z",
-      "duration": "0:08",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/314552df-7d31-43b8-8c96-9cee1c8ea456/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "PlumpSpeedyGuanacoSSSsss-EgnYGof9n-EzXpCA",
-      "creator_name": "yuyuyunomi"
-    },
-    {
       "id": "AbstruseBlindingOilCurseLit-fqxBkT6vvz9_KTYi",
       "title": "ゴミﾎﾟｲｰｰｰ",
       "game_name": "Apex Legends",
@@ -12090,6 +12101,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8027edd3-b765-407b-bfba-af905b8308fd/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "AbstruseBlindingOilCurseLit-fqxBkT6vvz9_KTYi",
       "creator_name": "虹空"
+    },
+    {
+      "id": "PlumpSpeedyGuanacoSSSsss-EgnYGof9n-EzXpCA",
+      "title": "適当ウィングマン✊🏻",
+      "game_name": "Apex Legends",
+      "view_count": 11,
+      "created_at": "2023-11-18T12:31:51Z",
+      "duration": "0:08",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/314552df-7d31-43b8-8c96-9cee1c8ea456/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "PlumpSpeedyGuanacoSSSsss-EgnYGof9n-EzXpCA",
+      "creator_name": "yuyuyunomi"
     },
     {
       "id": "FurtiveRamshackleDoveBCouch-ncWuBPP8N_GGXh-Y",
@@ -14281,28 +14303,6 @@
       "creator_name": "お気楽品行方正おじさん"
     },
     {
-      "id": "InquisitiveArbitraryChickpeaOSkomodo-3Ygo8zUMZnmNiSe1",
-      "title": "ビッグレイドからのへへへからの",
-      "game_name": "Escape from Tarkov",
-      "view_count": 11,
-      "created_at": "2023-04-17T13:49:26Z",
-      "duration": "0:42",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/79dde9cb-3dea-4dc5-9db0-bf7091a5b6ed/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "InquisitiveArbitraryChickpeaOSkomodo-3Ygo8zUMZnmNiSe1",
-      "creator_name": "ピーカラ"
-    },
-    {
-      "id": "WrongSpeedyLampSeemsGood-KJXkIvOw1DmjyOEO",
-      "title": "てーい",
-      "game_name": "Escape from Tarkov",
-      "view_count": 11,
-      "created_at": "2023-04-17T14:23:55Z",
-      "duration": "0:13",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/732e78a2-cea8-44dc-963f-1fd94464bab8/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "WrongSpeedyLampSeemsGood-KJXkIvOw1DmjyOEO",
-      "creator_name": "涼星25"
-    },
-    {
       "id": "SilkyWanderingRamenItsBoshyTime-2GP7LQ8tOogezuFI",
       "title": "どんまい",
       "game_name": "Escape from Tarkov",
@@ -14609,6 +14609,28 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bb8b1ee8-57be-41bd-b184-d98add5d7a6d/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "GiftedThirstyAdminPoooound-d44ArbfWVP1FYZHi",
       "creator_name": "えにし5050"
+    },
+    {
+      "id": "InquisitiveArbitraryChickpeaOSkomodo-3Ygo8zUMZnmNiSe1",
+      "title": "ビッグレイドからのへへへからの",
+      "game_name": "Escape from Tarkov",
+      "view_count": 11,
+      "created_at": "2023-04-17T13:49:26Z",
+      "duration": "0:42",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/79dde9cb-3dea-4dc5-9db0-bf7091a5b6ed/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "InquisitiveArbitraryChickpeaOSkomodo-3Ygo8zUMZnmNiSe1",
+      "creator_name": "ピーカラ"
+    },
+    {
+      "id": "WrongSpeedyLampSeemsGood-KJXkIvOw1DmjyOEO",
+      "title": "てーい",
+      "game_name": "Escape from Tarkov",
+      "view_count": 11,
+      "created_at": "2023-04-17T14:23:55Z",
+      "duration": "0:13",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/732e78a2-cea8-44dc-963f-1fd94464bab8/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "WrongSpeedyLampSeemsGood-KJXkIvOw1DmjyOEO",
+      "creator_name": "涼星25"
     },
     {
       "id": "AcceptableObedientOkapiStinkyCheese-CrDGkYkDBq_72lGX",
@@ -15810,17 +15832,6 @@
       "creator_name": "inja666"
     },
     {
-      "id": "PlumpFlaccidSkunkTakeNRG-M5aF41VCsZK-zjsU",
-      "title": "2023年　初記念カラオケ配信　にゅーさんのマリオネ",
-      "game_name": "Just Chatting",
-      "view_count": 5,
-      "created_at": "2023-01-17T14:35:07Z",
-      "duration": "0:14",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ca5e0220-b645-4afe-b320-a33320bf3829/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "PlumpFlaccidSkunkTakeNRG-M5aF41VCsZK-zjsU",
-      "creator_name": "inja666"
-    },
-    {
       "id": "GorgeousNastyOtterTheRinger-JErapsTGJ3HKKzyz",
       "title": "漁夫の悪魔　参上",
       "game_name": "Escape from Tarkov",
@@ -16402,6 +16413,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4424fc52-9fcf-43fd-b395-13e23d28e75b/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "BlushingZealousOrcaBrainSlug-YTAFY2TDEpk0Yi21",
       "creator_name": "yuyuyunomi"
+    },
+    {
+      "id": "PlumpFlaccidSkunkTakeNRG-M5aF41VCsZK-zjsU",
+      "title": "2023年　初記念カラオケ配信　にゅーさんのマリオネ",
+      "game_name": "Just Chatting",
+      "view_count": 5,
+      "created_at": "2023-01-17T14:35:07Z",
+      "duration": "0:14",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ca5e0220-b645-4afe-b320-a33320bf3829/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "PlumpFlaccidSkunkTakeNRG-M5aF41VCsZK-zjsU",
+      "creator_name": "inja666"
     },
     {
       "id": "PluckyDaintyFriseeMoreCowbell-yap8i_lBFgNygHId",
@@ -18615,17 +18637,6 @@
       "creator_name": "yuyuyunomi"
     },
     {
-      "id": "AwkwardSleepyCurlewKAPOW-4jHo793i_oa3GzWs",
-      "title": "お肉食べて元気もりもりタルコフ",
-      "game_name": "Escape from Tarkov",
-      "view_count": 3,
-      "created_at": "2022-08-04T16:31:59Z",
-      "duration": "0:29",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cdcb60d0-b161-4c0f-b5fe-6ecd73250255/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "AwkwardSleepyCurlewKAPOW-4jHo793i_oa3GzWs",
-      "creator_name": "代表取締役西原"
-    },
-    {
       "id": "GlutenFreeRacyVultureArgieB8-flhEuBnSsnGm5BlU",
       "title": "さあ、終わらせよう。終わって元気あったらタルコフ？",
       "game_name": "Resident Evil 3: Nemesis",
@@ -18635,6 +18646,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/28d9b307-c6de-495d-9d97-942e5eb20ddb/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "GlutenFreeRacyVultureArgieB8-flhEuBnSsnGm5BlU",
       "creator_name": "えぬ田"
+    },
+    {
+      "id": "AwkwardSleepyCurlewKAPOW-4jHo793i_oa3GzWs",
+      "title": "お肉食べて元気もりもりタルコフ",
+      "game_name": "Escape from Tarkov",
+      "view_count": 3,
+      "created_at": "2022-08-04T16:31:59Z",
+      "duration": "0:29",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cdcb60d0-b161-4c0f-b5fe-6ecd73250255/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "AwkwardSleepyCurlewKAPOW-4jHo793i_oa3GzWs",
+      "creator_name": "代表取締役西原"
     },
     {
       "id": "PeppyInnocentGoatKappaRoss-zvgsZKqzNOoiTQY8",
@@ -21222,17 +21244,6 @@
       "creator_name": "itowaroshi"
     },
     {
-      "id": "RenownedSquareHabaneroBIRB-w0T00CeSx9q4bZDk",
-      "title": "正気を取り戻すにゅーさん",
-      "game_name": "Just Chatting",
-      "view_count": 23,
-      "created_at": "2022-01-22T13:38:06Z",
-      "duration": "0:14",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cbdc610b-7d06-4f97-a503-064ce23782d9/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "RenownedSquareHabaneroBIRB-w0T00CeSx9q4bZDk",
-      "creator_name": "itowaroshi"
-    },
-    {
       "id": "StrangeTallBeaverPeanutButterJellyTime-Vlq6C-UlgmESRK_n",
       "title": "無理しなさ過ぎた",
       "game_name": "Apex Legends",
@@ -21242,17 +21253,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e5ef5f73-7042-4159-9124-bd517fb31eb6/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "StrangeTallBeaverPeanutButterJellyTime-Vlq6C-UlgmESRK_n",
       "creator_name": "虹空"
-    },
-    {
-      "id": "ConfidentUgliestWhaleDeIlluminati-VTiH5g54HQzK7ZeS",
-      "title": "サプライズ動画から、さらにサプライズ",
-      "game_name": "Just Chatting",
-      "view_count": 14,
-      "created_at": "2022-01-22T13:43:50Z",
-      "duration": "0:21",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/44339d80-093e-4428-aeca-5c8c6310876a/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "ConfidentUgliestWhaleDeIlluminati-VTiH5g54HQzK7ZeS",
-      "creator_name": "itowaroshi"
     },
     {
       "id": "BreakablePoliteJackalGivePLZ-NGv6nCJDvnQ2AR3V",
@@ -21475,17 +21475,6 @@
       "creator_name": "inja666"
     },
     {
-      "id": "SuperAmazingTortoiseJebaited-QcOJNGcwd37FjhNZ",
-      "title": "リアルきゅんきゅんビーム",
-      "game_name": "Just Chatting",
-      "view_count": 7,
-      "created_at": "2022-01-22T14:24:16Z",
-      "duration": "0:41",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2d5702f4-9f5d-4445-addf-14b13e6efea7/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "SuperAmazingTortoiseJebaited-QcOJNGcwd37FjhNZ",
-      "creator_name": "itowaroshi"
-    },
-    {
       "id": "TenaciousTallCougarBudBlast-ubW0MRb1ojZxiAJt",
       "title": "運転手さん？",
       "game_name": "Escape from Tarkov",
@@ -21649,17 +21638,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/926e536c-1229-4011-965f-f3d7b5333bb6/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "KnottyCrackyKoupreyAllenHuhu-c_Usht1I_gTWhdJg",
       "creator_name": "mosashi1"
-    },
-    {
-      "id": "DeafLightMoonPogChamp-VA_2Xhqbn4XCLXiZ",
-      "title": "愛する妻の誕生日会。",
-      "game_name": "Just Chatting",
-      "view_count": 4,
-      "created_at": "2022-01-22T13:56:50Z",
-      "duration": "0:33",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a6ae4e60-90c8-4308-b2aa-a8a32cb18f77/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "DeafLightMoonPogChamp-VA_2Xhqbn4XCLXiZ",
-      "creator_name": "currypan22"
     },
     {
       "id": "RoundEndearingDonutMoreCowbell-OHajt7Z-IxxvBQCj",
@@ -22025,6 +22003,17 @@
       "creator_name": "melonpanEX"
     },
     {
+      "id": "RenownedSquareHabaneroBIRB-w0T00CeSx9q4bZDk",
+      "title": "正気を取り戻すにゅーさん",
+      "game_name": "Just Chatting",
+      "view_count": 23,
+      "created_at": "2022-01-22T13:38:06Z",
+      "duration": "0:14",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cbdc610b-7d06-4f97-a503-064ce23782d9/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "RenownedSquareHabaneroBIRB-w0T00CeSx9q4bZDk",
+      "creator_name": "itowaroshi"
+    },
+    {
       "id": "PerfectBoldKeyboardPicoMause-n0iqxQMWpWKRoFtZ",
       "title": "ちょくちょくscavになる男 v2",
       "game_name": "Just Chatting",
@@ -22100,6 +22089,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/80d9ce92-6367-4c55-be64-32cad9b97aac/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "CrunchyBrightDonkeyOSfrog-wW3_27QbFiiASfzg",
       "creator_name": "春風いずみ"
+    },
+    {
+      "id": "ConfidentUgliestWhaleDeIlluminati-VTiH5g54HQzK7ZeS",
+      "title": "サプライズ動画から、さらにサプライズ",
+      "game_name": "Just Chatting",
+      "view_count": 14,
+      "created_at": "2022-01-22T13:43:50Z",
+      "duration": "0:21",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/44339d80-093e-4428-aeca-5c8c6310876a/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "ConfidentUgliestWhaleDeIlluminati-VTiH5g54HQzK7ZeS",
+      "creator_name": "itowaroshi"
     },
     {
       "id": "CredulousCourteousRingPeteZarollTie-tpXRosmcTUJK0Epc",
@@ -22355,6 +22355,17 @@
       "creator_name": "psybiman"
     },
     {
+      "id": "SuperAmazingTortoiseJebaited-QcOJNGcwd37FjhNZ",
+      "title": "リアルきゅんきゅんビーム",
+      "game_name": "Just Chatting",
+      "view_count": 7,
+      "created_at": "2022-01-22T14:24:16Z",
+      "duration": "0:41",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2d5702f4-9f5d-4445-addf-14b13e6efea7/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "SuperAmazingTortoiseJebaited-QcOJNGcwd37FjhNZ",
+      "creator_name": "itowaroshi"
+    },
+    {
       "id": "RacyElatedTigerTBTacoRight-37WSW5CLOvyOoAcf",
       "title": "あ、とか、い、とか",
       "game_name": "Escape from Tarkov",
@@ -22441,6 +22452,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/19575ff5-59ff-4678-b161-eb0cffa3c591/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "BusyTardyMomTakeNRG-HhhiihPDK0RZSNec",
       "creator_name": "りゃんころ"
+    },
+    {
+      "id": "DeafLightMoonPogChamp-VA_2Xhqbn4XCLXiZ",
+      "title": "愛する妻の誕生日会。",
+      "game_name": "Just Chatting",
+      "view_count": 4,
+      "created_at": "2022-01-22T13:56:50Z",
+      "duration": "0:33",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a6ae4e60-90c8-4308-b2aa-a8a32cb18f77/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "DeafLightMoonPogChamp-VA_2Xhqbn4XCLXiZ",
+      "creator_name": "currypan22"
     },
     {
       "id": "AgileCrackyFishAMPEnergyCherry-fBDDsvrohUakMP9L",
@@ -24346,17 +24368,6 @@
       "creator_name": "Newsaan"
     },
     {
-      "id": "PoorGiantEmuImGlitch-gUPVm4iGqoauN3e-",
-      "title": "見せてもらおうか、Newマウスパッドの性能とやらを。",
-      "game_name": "Escape from Tarkov",
-      "view_count": 2,
-      "created_at": "2021-10-16T15:28:17Z",
-      "duration": "0:33",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/852f360b-89c3-4084-be11-e2e490f7df19/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "PoorGiantEmuImGlitch-gUPVm4iGqoauN3e-",
-      "creator_name": "けんじだよー"
-    },
-    {
       "id": "ThankfulCourageousYakGrammarKing-5V_uXudPiXL71vhH",
       "title": "アイツを狩るための金策ぅぅぅぅ！！",
       "game_name": "Escape from Tarkov",
@@ -24366,6 +24377,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e345ab4d-ade4-4aea-bf0e-57c658597483/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "ThankfulCourageousYakGrammarKing-5V_uXudPiXL71vhH",
       "creator_name": "狐宮ゆる"
+    },
+    {
+      "id": "PoorGiantEmuImGlitch-gUPVm4iGqoauN3e-",
+      "title": "見せてもらおうか、Newマウスパッドの性能とやらを。",
+      "game_name": "Escape from Tarkov",
+      "view_count": 2,
+      "created_at": "2021-10-16T15:28:17Z",
+      "duration": "0:33",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/852f360b-89c3-4084-be11-e2e490f7df19/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "PoorGiantEmuImGlitch-gUPVm4iGqoauN3e-",
+      "creator_name": "けんじだよー"
     },
     {
       "id": "ObedientEvilBeeKappaPride-cM9hyt6iUkgeKZt3",
@@ -24423,17 +24445,6 @@
       "creator_name": "itowaroshi"
     },
     {
-      "id": "UnsightlyDeterminedVelociraptorUWot-4QUlBPDUHvosKnwE",
-      "title": "きゅんきゅんびびびびびびびびびｂ",
-      "game_name": "Escape from Tarkov",
-      "view_count": 142,
-      "created_at": "2021-08-25T14:25:43Z",
-      "duration": "0:28",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e9923e79-d66a-4304-9b90-b24484719360/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "UnsightlyDeterminedVelociraptorUWot-4QUlBPDUHvosKnwE",
-      "creator_name": "締め付け太郎"
-    },
-    {
       "id": "MoistElatedPizzaGrammarKing-3dvRtnKLk14_zAwv",
       "title": "newさｎ死に損なる",
       "game_name": "Escape from Tarkov",
@@ -24456,17 +24467,6 @@
       "creator_name": "けんじだよー"
     },
     {
-      "id": "HumbleFunChinchillaFutureMan-ylVDAZ61F7OFltXe",
-      "title": "一発ギャグ",
-      "game_name": "Escape from Tarkov",
-      "view_count": 48,
-      "created_at": "2021-08-25T15:01:36Z",
-      "duration": "0:59",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/889eabbd-0300-49ae-965b-fd7424fba8e1/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "HumbleFunChinchillaFutureMan-ylVDAZ61F7OFltXe",
-      "creator_name": "締め付け太郎"
-    },
-    {
       "id": "PolishedStormyCurlewBudStar-onZHsBnirFd9OHtz",
       "title": "敗因　音聞いてない",
       "game_name": "Escape from Tarkov",
@@ -24476,17 +24476,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a91d1e21-769f-44fc-b8fb-d130306d94ff/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "PolishedStormyCurlewBudStar-onZHsBnirFd9OHtz",
       "creator_name": "狐宮ゆる"
-    },
-    {
-      "id": "SquareDelightfulNuggetsMikeHogu-e8giJFnnuAjgHhPj",
-      "title": "びびびびびびびびび",
-      "game_name": "Escape from Tarkov",
-      "view_count": 27,
-      "created_at": "2021-08-25T14:25:24Z",
-      "duration": "0:28",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/55a8e4a7-169a-4b23-b4e5-c9df7559e3ee/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "SquareDelightfulNuggetsMikeHogu-e8giJFnnuAjgHhPj",
-      "creator_name": "締め付け太郎"
     },
     {
       "id": "LazyObeseFlyLeeroyJenkins-dFx89h_NBzoz3Dyw",
@@ -24509,17 +24498,6 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b90e463c-ba78-4cbd-9358-87870cbda4dd/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "HealthyReliablePotatoYouDontSay-GJCHRWGvHXQgOsJl",
       "creator_name": "りゃんころ"
-    },
-    {
-      "id": "ElegantSecretiveSharkFunRun-lKfLwSTMeGmmQzTl",
-      "title": "結局、今日も脱ぐのね・・・？北斗七星？？？",
-      "game_name": "Escape from Tarkov",
-      "view_count": 23,
-      "created_at": "2021-08-25T14:20:22Z",
-      "duration": "0:59",
-      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/88290743-0fd6-4147-8e83-05fc578b1c5c/landscape/thumb/thumb-0000000000-480x272.jpg",
-      "clip_slug": "ElegantSecretiveSharkFunRun-lKfLwSTMeGmmQzTl",
-      "creator_name": "けんじだよー"
     },
     {
       "id": "MoistFrailPlumageTebowing-S3k9ASBezEartJym",
@@ -25039,6 +25017,17 @@
       "creator_name": "ドサ健産のトマト"
     },
     {
+      "id": "UnsightlyDeterminedVelociraptorUWot-4QUlBPDUHvosKnwE",
+      "title": "きゅんきゅんびびびびびびびびびｂ",
+      "game_name": "Escape from Tarkov",
+      "view_count": 142,
+      "created_at": "2021-08-25T14:25:43Z",
+      "duration": "0:28",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e9923e79-d66a-4304-9b90-b24484719360/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "UnsightlyDeterminedVelociraptorUWot-4QUlBPDUHvosKnwE",
+      "creator_name": "締め付け太郎"
+    },
+    {
       "id": "AnnoyingHelplessWhaleRuleFive-pEgOH_0PzkE6NG_n",
       "title": "これが正しいタルコフのプレイ",
       "game_name": "Escape from Tarkov",
@@ -25094,6 +25083,17 @@
       "creator_name": "締め付け太郎"
     },
     {
+      "id": "HumbleFunChinchillaFutureMan-ylVDAZ61F7OFltXe",
+      "title": "一発ギャグ",
+      "game_name": "Escape from Tarkov",
+      "view_count": 48,
+      "created_at": "2021-08-25T15:01:36Z",
+      "duration": "0:59",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/889eabbd-0300-49ae-965b-fd7424fba8e1/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "HumbleFunChinchillaFutureMan-ylVDAZ61F7OFltXe",
+      "creator_name": "締め付け太郎"
+    },
+    {
       "id": "EnergeticBreakableCardBlargNaut-6t_snhtUcjNwnzjI",
       "title": "あれれれれれぇぇぇ？？？？？？？？？？？？？？？？？？？",
       "game_name": "Escape from Tarkov",
@@ -25127,6 +25127,17 @@
       "creator_name": "虹空"
     },
     {
+      "id": "SquareDelightfulNuggetsMikeHogu-e8giJFnnuAjgHhPj",
+      "title": "びびびびびびびびび",
+      "game_name": "Escape from Tarkov",
+      "view_count": 27,
+      "created_at": "2021-08-25T14:25:24Z",
+      "duration": "0:28",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/55a8e4a7-169a-4b23-b4e5-c9df7559e3ee/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "SquareDelightfulNuggetsMikeHogu-e8giJFnnuAjgHhPj",
+      "creator_name": "締め付け太郎"
+    },
+    {
       "id": "CrispyCooperativeRaccoonSoBayed-DLSxXb49CDydFHEd",
       "title": "足音大事！！",
       "game_name": "Escape from Tarkov",
@@ -25158,6 +25169,17 @@
       "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0efa7439-7d86-49ae-a122-89503ac3d8e7/landscape/thumb/thumb-0000000000-480x272.jpg",
       "clip_slug": "CharmingSwissLobsterHassanChop-Bmyb2qktMFVzohC3",
       "creator_name": "締め付け太郎"
+    },
+    {
+      "id": "ElegantSecretiveSharkFunRun-lKfLwSTMeGmmQzTl",
+      "title": "結局、今日も脱ぐのね・・・？北斗七星？？？",
+      "game_name": "Escape from Tarkov",
+      "view_count": 23,
+      "created_at": "2021-08-25T14:20:22Z",
+      "duration": "0:59",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/88290743-0fd6-4147-8e83-05fc578b1c5c/landscape/thumb/thumb-0000000000-480x272.jpg",
+      "clip_slug": "ElegantSecretiveSharkFunRun-lKfLwSTMeGmmQzTl",
+      "creator_name": "けんじだよー"
     },
     {
       "id": "RoundFurryChickenDeIlluminati-z0ENhgKKp8-ibcuc",
